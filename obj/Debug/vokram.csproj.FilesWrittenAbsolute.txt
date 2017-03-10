@@ -1,0 +1,13 @@
+/home/kenwi/Desktop/Hadamard/vokram/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/vokram.exe.mdb
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/vokram.exe
+/home/kenwi/Desktop/Hadamard/vokram/obj/Debug/vokram.exe
+/home/kenwi/Desktop/Hadamard/vokram/obj/Debug/vokram.exe.mdb
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Hadamard.Common.dll
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/IrcDotNet.dll
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/IrcDotNet.xml
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Newtonsoft.Json.dll
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Newtonsoft.Json.xml
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Hadamard.exe
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Hadamard.exe.mdb
+/home/kenwi/Desktop/Hadamard/vokram/bin/Debug/Hadamard.pdb
