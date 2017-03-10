@@ -27,9 +27,10 @@ namespace vokram
 
         public VokramBot(string host, string nick) : base(host)
         {
+            _name = nick;
             RegistrationInfo = new IrcUserRegistrationInfo()
             {
-                NickName = Name,
+                NickName = nick,
                 UserName = "Markov",
                 RealName = "Is Real"
             };
@@ -39,21 +40,20 @@ namespace vokram
                 new Help(),
                 new MarkovBrain()
             };
+            Plugins.ForEach(plugin => plugin.Initialize(this));
 
             MessageReceived += OnMessageReceived;
             PrivateMessageReceived += OnMessageReceived;
-
-            Plugins.ForEach(plugin => plugin.Initialize(this));
         }
 
         private void OnMessageReceived(object sender, IrcMessageEventArgs message)
         {
             var list = new List<Action<IrcMessageEventArgs>>();
-            foreach (var subscription in _subscriptions)
+            _subscriptions.ForEach(subscription =>
             {
                 if (Regex.IsMatch(message.Text, subscription.Key))
                     list.Add(subscription.Value);
-            }
+            });
             list.ForEach( callback => callback(message));
         }
 

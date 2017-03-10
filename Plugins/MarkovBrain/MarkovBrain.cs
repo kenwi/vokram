@@ -36,6 +36,7 @@ namespace vokram.Plugins
         {
             var talker = new TalkBehaviour(_markovChainString);
             var reply = message.CreateReply(talker.GenerateRandomSentence());
+            Bot.SendMessage(reply);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace vokram.Plugins
 
         private void Callback(IrcMessageEventArgs message)
         {
-            var reply = new IrcMessageEventArgs(message.Source, message.Targets, "NO HELP FOR YOU!", message.Encoding);
+            var reply = message.CreateReply($"{message.Source.Name}: NO HELP FOR YOU!");
             Bot.SendMessage(reply);
         }
     }

@@ -6,7 +6,7 @@ namespace vokram
     {
         public static IrcMessageEventArgs CreateReply(this IrcMessageEventArgs message, string text)
         {
-            return new IrcMessageEventArgs(message.Source, message.Targets, message.Text, message.Encoding);
+            return new IrcMessageEventArgs(message.Source, message.Targets, text, message.Encoding);
         }
     }
 }

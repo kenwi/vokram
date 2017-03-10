@@ -2,7 +2,8 @@
 {
     public interface IIrcPlugin
     {
-        void Initialize(IIrcBot bot);
+        IIrcBot Bot { get; }
         string Name { get; }
+        void Initialize(IIrcBot bot);
     }
 }
