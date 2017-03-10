@@ -9,23 +9,24 @@ namespace vokram
 {
     public class SaveBehaviour
     {
-        public string BrainFile { get; set; }
         private readonly MarkovChainString _markovChainString;
+        private string _filename;
 
-        public SaveBehaviour(MarkovChainString markovChainString)
+        public SaveBehaviour(MarkovChainString markovChainString, string filename)
         {
             _markovChainString = markovChainString;
+            _filename = filename;
         }
 
         public void Process()
         {
-            Save(BrainFile);
+            Save(_filename);
         }
 
-        private void Save(string brainFile)
+        private void Save(string filename)
         {
-            brainFile = $"{brainFile}.txt";
-            using (var fileStream = File.Create(brainFile + ".txt"))
+            filename = filename.EndsWith(".txt") ? filename : $"{filename}.txt";
+            using (var fileStream = File.Create(filename))
             {
                 var memoryStream = Serializer.SerializeToStream(_markovChainString);
                 memoryStream.Seek(0, SeekOrigin.Begin);

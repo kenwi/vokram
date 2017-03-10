@@ -22,13 +22,13 @@ namespace vokram.Plugins
 
         private void SaveCallback(IrcMessageEventArgs message)
         {
-            var saver = new SaveBehaviour(_markovChainString) {BrainFile = "vokram"};
+            var saver = new SaveBehaviour(_markovChainString, Bot.Name);
             saver.Process();
         }
 
         private void LoadCallback(IrcMessageEventArgs message)
         {
-            var loader = new LoadBehaviour(_markovChainString) {BrainFile = "vokram"};
+            var loader = new LoadBehaviour(_markovChainString, Bot.Name);
             loader.Process();
         }
 

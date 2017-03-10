@@ -15,11 +15,13 @@ namespace vokram
 
         public IList<IIrcPlugin> Plugins { get; }
 
+        public string Name => "vokram2";
+
         public VokramBot(string host, string nick) : base(host)
         {
             RegistrationInfo = new IrcUserRegistrationInfo()
             {
-                NickName = nick,
+                NickName = Name,
                 UserName = "Markov",
                 RealName = "Is Real"
             };

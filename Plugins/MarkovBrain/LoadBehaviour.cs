@@ -9,26 +9,27 @@ namespace IrcDotNet
 {
     public class LoadBehaviour
     {
-        public string BrainFile { get; set; }
+        private string _filename;
         private readonly MarkovChainString _markovChainString;
 
-        public LoadBehaviour(MarkovChainString markovChainString)
+        public LoadBehaviour(MarkovChainString markovChainString, string filename)
         {
             _markovChainString = markovChainString;
+            _filename = filename;
         }
 
         public void Process()
         {
-            Load(BrainFile);
+            Load(_filename);
         }
 
-        private void Load(string brainFile)
+        private void Load(string filename)
         {
-            brainFile = $"{brainFile}.txt";
+            filename = filename.EndsWith(".txt") ? filename : $"{filename}.txt";
             try
             {
                 using (var ms = new MemoryStream())
-                using (var fileStream = File.OpenRead(brainFile))
+                using (var fileStream = File.OpenRead(filename))
                 {
                     var bytes = new byte[fileStream.Length];
                     fileStream.Read(bytes, 0, (int)fileStream.Length);
@@ -44,7 +45,7 @@ namespace IrcDotNet
             }
             catch (Exception ex)
             {
-                throw new Exception($"Could not load brain '{brainFile}'");
+                throw new Exception($"Could not load brain '{filename}'");
             }
         }
     }
