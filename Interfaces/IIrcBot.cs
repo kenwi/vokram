@@ -10,6 +10,6 @@ namespace vokram
         string Name { get; }
 
         void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback);
-        void SendMessage(IrcMessageEventArgs message);
+        BasicClient SendMessage(IrcMessageEventArgs message);
     }
 }

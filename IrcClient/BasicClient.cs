@@ -46,13 +46,12 @@ namespace vokram
             return this;
         }
 
-        public BasicClient SendMessageTo(string channel, string text)
+        public void ChangeNick(string name)
         {
-            DefaultClient.LocalUser.SendMessage(channel, text);
-            return this;
+            DefaultClient.LocalUser.SetNickName(name);
         }
 
-        public BasicClient SendMessage(Message message)
+        public BasicClient SendMessage(IrcMessageEventArgs message)
         {
             DefaultClient.LocalUser.SendMessage(message.Targets, message.Text);
             return this;
