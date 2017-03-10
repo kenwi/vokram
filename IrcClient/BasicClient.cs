@@ -46,9 +46,10 @@ namespace vokram
             return this;
         }
 
-        public void ChangeNick(string name)
+        public BasicClient ChangeNick(string name)
         {
             DefaultClient.LocalUser.SetNickName(name);
+            return this;
         }
 
         public BasicClient SendMessage(IrcMessageEventArgs message)
