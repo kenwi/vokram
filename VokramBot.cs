@@ -13,7 +13,8 @@ namespace vokram
         private readonly Dictionary<string, Action<IrcMessageEventArgs>> _subscriptions
             = new Dictionary<string, Action<IrcMessageEventArgs>>();
         
-        public IList<IIrcPlugin> Plugins { get; }
+        public IList<IIrcPlugin> Plugins { get; private set; }
+        public IrcUser Owner { get; private set; }
 
         private string _name;
         public string Name {
@@ -27,21 +28,34 @@ namespace vokram
 
         public VokramBot(string host, string nick) : base(host)
         {
+            RegistrationInfo = SetupCredentials(nick);
+            Plugins = SetupPlugins();
+            Plugins.ForEach(plugin => plugin.Initialize(this));
+            SetupEvents();
+        }
+
+        private IrcUserRegistrationInfo SetupCredentials(string nick)
+        {
             _name = nick;
-            RegistrationInfo = new IrcUserRegistrationInfo()
+            return new IrcUserRegistrationInfo()
             {
                 NickName = nick,
                 UserName = "Markov",
                 RealName = "Is Real"
             };
+        }
 
-            Plugins = new List<IIrcPlugin>
+        private List<IIrcPlugin> SetupPlugins()
+        {
+            return new List<IIrcPlugin>
             {
                 new Help(),
                 new MarkovBrain()
             };
-            Plugins.ForEach(plugin => plugin.Initialize(this));
+        }
 
+        private void SetupEvents()
+        {
             MessageReceived += OnMessageReceived;
             PrivateMessageReceived += OnMessageReceived;
         }

@@ -18,6 +18,11 @@ namespace IrcDotNet
         private ReadOnlyCollection<MarkovChainStringNode> nodesReadOnly;
         public string Nick;
 
+        internal void Train(IrcMessageEventArgs message)
+        {
+            throw new NotImplementedException();
+        }
+
         public MarkovChainString()
         {
             this.nodes = new List<MarkovChainStringNode>();

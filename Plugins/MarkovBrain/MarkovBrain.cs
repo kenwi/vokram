@@ -12,12 +12,12 @@ namespace vokram.Plugins
             Bot.SubscribeToMessage("^!talk", TalkCallback);
             Bot.SubscribeToMessage("^!load", LoadCallback);
             Bot.SubscribeToMessage("^!save", SaveCallback);
-            Bot.SubscribeToMessage("^(?!/!)\\W+$", TrainCallback);
+            // Bot.SubscribeToMessage("^(?!/!)\\W+$", TrainCallback);
         }
 
         private void TrainCallback(IrcMessageEventArgs message)
         {
-
+            _markovChainString.Train(message);
         }
 
         private void SaveCallback(IrcMessageEventArgs message)

@@ -8,6 +8,7 @@ namespace vokram
     {
         IList<IIrcPlugin> Plugins { get; }
         string Name { get; }
+        IrcUser Owner { get; }
 
         void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback);
         BasicClient SendMessage(IrcMessageEventArgs message);
