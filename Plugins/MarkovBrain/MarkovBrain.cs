@@ -12,7 +12,7 @@ namespace vokram.Plugins
             Bot.SubscribeToMessage("^!talk", TalkCallback);
             Bot.SubscribeToMessage("^!load", LoadCallback);
             Bot.SubscribeToMessage("^!save", SaveCallback);
-            Bot.SubscribeToMessage("^(.?$|[^!].*)", TrainCallback);
+            Bot.SubscribeToAllMessages(TrainCallback);
         }
 
         private void TrainCallback(IrcMessageEventArgs message)

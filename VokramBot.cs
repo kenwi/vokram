@@ -72,5 +72,8 @@ namespace vokram
 
         public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)
             => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
+
+        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
+            => SubscriptionsRepository.SubscribeToAllMessages(callback);
     }
 }
