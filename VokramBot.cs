@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using IrcDotNet;
 using IrcDotNet.Collections;
+using Microsoft.SqlServer.Server;
+using vokram.Interfaces;
 using vokram.Plugins;
+using vokram.Repositories;
 
 namespace vokram
 {
     public class VokramBot : BasicClient, IIrcBot
     {
-        private readonly Dictionary<string, Action<IrcMessageEventArgs>> _subscriptions
-            = new Dictionary<string, Action<IrcMessageEventArgs>>();
-        
-        public IList<IIrcPlugin> Plugins { get; private set; }
-        public IrcUser Owner { get; private set; }
+        private ISubscriptionRepository SubscriptionsRepository { get; } 
+            = new SubscriptionsRepository();
+
+        public IList<IIrcPlugin> Plugins { get; }
+        public IrcUser Owner { get; set; }
 
         private string _name;
         public string Name {
@@ -28,13 +31,13 @@ namespace vokram
 
         public VokramBot(string host, string nick) : base(host)
         {
-            RegistrationInfo = SetupCredentials(nick);
+            RegistrationInfo = SetupIdentity(nick);
             Plugins = SetupPlugins();
             Plugins.ForEach(plugin => plugin.Initialize(this));
             SetupEvents();
         }
 
-        private IrcUserRegistrationInfo SetupCredentials(string nick)
+        private IrcUserRegistrationInfo SetupIdentity(string nick)
         {
             _name = nick;
             return new IrcUserRegistrationInfo()
@@ -50,7 +53,8 @@ namespace vokram
             return new List<IIrcPlugin>
             {
                 new Help(),
-                new MarkovBrain()
+                new MarkovBrain(),
+                new Uptime()
             };
         }
 
@@ -62,19 +66,11 @@ namespace vokram
 
         private void OnMessageReceived(object sender, IrcMessageEventArgs message)
         {
-            var list = new List<Action<IrcMessageEventArgs>>();
-            _subscriptions.ForEach(subscription =>
-            {
-                if (Regex.IsMatch(message.Text, subscription.Key))
-                    list.Add(subscription.Value);
-            });
-            list.ForEach( callback => callback(message));
+            var subscriptions = SubscriptionsRepository.GetSubscriptions(message);
+            subscriptions.ForEach(callback => callback(message));
         }
 
         public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)
-        {
-            if (!_subscriptions.ContainsKey(trigger))
-                _subscriptions.Add(trigger, callback);
-        }
+            => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
     }
 }

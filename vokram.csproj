@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ISubscriptionRepository.cs" />
     <Compile Include="IrcClient\BasicClient.cs" />
     <Compile Include="IrcClient\Client.cs" />
     <Compile Include="Extensions\Extensions.cs" />
@@ -57,10 +58,12 @@
     <Compile Include="Plugins\Help.cs" />
     <Compile Include="Plugins\MarkovBrain\MarkovBrain.cs" />
     <Compile Include="Plugins\PluginBase.cs" />
+    <Compile Include="Plugins\Uptime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Plugins\MarkovBrain\SaveBehaviour.cs" />
     <Compile Include="Plugins\MarkovBrain\TalkBehaviour.cs" />
+    <Compile Include="Repositories\SubscriptionsRepository.cs" />
     <Compile Include="Utils\Serializer.cs" />
     <Compile Include="VokramBot.cs" />
   </ItemGroup>

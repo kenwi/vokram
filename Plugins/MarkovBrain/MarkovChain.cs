@@ -20,7 +20,6 @@ namespace IrcDotNet
 
         internal void Train(IrcMessageEventArgs message)
         {
-            throw new NotImplementedException();
         }
 
         public MarkovChainString()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using IrcDotNet;
+using vokram.Interfaces;
 
 namespace vokram
 {
@@ -11,6 +12,7 @@ namespace vokram
         IrcUser Owner { get; }
 
         void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback);
+//        void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback);
         BasicClient SendMessage(IrcMessageEventArgs message);
     }
 }
