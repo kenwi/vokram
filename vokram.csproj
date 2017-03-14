@@ -57,6 +57,7 @@
     <Compile Include="Plugins\MarkovBrain\MarkovChainNode.cs" />
     <Compile Include="Plugins\Help.cs" />
     <Compile Include="Plugins\MarkovBrain\MarkovBrain.cs" />
+    <Compile Include="Plugins\MarkovBrain\MarkovChainTrainer.cs" />
     <Compile Include="Plugins\PluginBase.cs" />
     <Compile Include="Plugins\Uptime.cs" />
     <Compile Include="Program.cs" />
@@ -68,7 +69,6 @@
     <Compile Include="VokramBot.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
