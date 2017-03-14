@@ -55,7 +55,10 @@ namespace vokram.Plugins
             var parameters = GetParameters(message.Text);
             if (parameters.Length >= 3 && parameters[1].ToLower() == "about")
             {
-                message = message.CreateReply(talker.GenerateRandomSentenceFrom(parameters[2]));
+                var talkAboutText = GetParameters(message.Text).Skip(2);
+                var keyword = talkAboutText.Last();
+
+                message = message.CreateReply(talker.GenerateRandomSentenceFrom(keyword));
                 if (parameters.Length == 4) // channel
                 {
                     var channel = parameters[3].StartsWith("#") ? parameters[3] : $"#{parameters[3]}";

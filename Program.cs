@@ -10,9 +10,9 @@ namespace vokram
     {
         public static void Main(string[] args)
         {
-            using (var vokram = new VokramBot("irc.freenode.net", "vokram"))
+            using (var vokram = new VokramBot("irc.freenode.net", "vokram2"))
             {
-                vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#nff").Join("#hadamard");
+                vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#hadamard");
                 vokram.ConnectAndEnterMainLoop();
             }
         }
@@ -24,7 +24,7 @@ namespace vokram
             var saveBehaviour = new SaveBehaviour(markovChainString, "vokram");
 
             int i = 0;
-            var messages = File.ReadAllLines("log.txt");
+            var messages = File.ReadAllLines("training.txt");
             messages.ForEach(message =>
             {
                 var sub = message.Substring(0, 21);

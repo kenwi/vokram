@@ -11,21 +11,11 @@ namespace vokram
 {
     public class VokramBot : BasicClient, IIrcBot
     {
+        public IrcUser Owner { get; set; }
+        public string Name { get; set; }
+        public IList<IIrcPlugin> Plugins { get; }
         private ISubscriptionRepository SubscriptionsRepository { get; } 
             = new SubscriptionsRepository();
-
-        public IList<IIrcPlugin> Plugins { get; }
-        public IrcUser Owner { get; set; }
-
-        private string _name;
-        public string Name {
-            get { return _name; }
-            set
-            {
-                _name = value;
-                this.ChangeNick(_name);
-            }
-        }
 
         public VokramBot(string host, string nick) : base(host)
         {
@@ -37,7 +27,7 @@ namespace vokram
 
         private IrcUserRegistrationInfo SetupIdentity(string nick)
         {
-            _name = nick;
+            Name = nick;
             return new IrcUserRegistrationInfo()
             {
                 NickName = nick,
@@ -50,12 +40,8 @@ namespace vokram
         {
             return new List<IIrcPlugin>
             {
-                new Help(),
-                new MarkovBrain(),
-                new Uptime(),
-                new Join(),
-                new Leave(),
-                new Say()
+                new Help(), new MarkovBrain(), new Uptime(),
+                new Join(), new Leave(), new Say()
             };
         }
 

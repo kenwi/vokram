@@ -20,10 +20,8 @@ namespace IrcDotNet
             {
                 words = _markovChainString.GenerateSequence().ToArray();
             } while (words.Length < 3 && trials++ < 50);
-            var sentence = string.Join(" ", words) + ".";
-            sentence = FirstCharToUpper(sentence);
-
-            return sentence;
+            
+            return WordsToSentence(words);
         }
 
         public string GenerateRandomSentenceFrom(string text)
@@ -34,9 +32,14 @@ namespace IrcDotNet
             {
                 words = _markovChainString.GenerateSequenceFrom(text).ToArray();
             } while (words.Length < 3 && trials++ < 50);
-            var sentence = text + " " + string.Join(" ", words) + ".";
-            sentence = FirstCharToUpper(sentence);
 
+            return WordsToSentence(words);
+        }
+
+        private static string WordsToSentence(string[] words)
+        {
+            var sentence = string.Join(" ", words) + ".";
+            sentence = FirstCharToUpper(sentence);
             return sentence;
         }
 
