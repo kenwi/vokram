@@ -1,4 +1,5 @@
-﻿using IrcDotNet;
+﻿using System.Collections.Generic;
+using IrcDotNet;
 using System.Text.RegularExpressions;
 
 namespace vokram

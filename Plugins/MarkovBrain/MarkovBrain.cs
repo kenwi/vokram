@@ -1,4 +1,6 @@
-﻿using IrcDotNet;
+﻿using System.Collections.Generic;
+using System.Linq;
+using IrcDotNet;
 
 namespace vokram.Plugins
 {
@@ -48,8 +50,28 @@ namespace vokram.Plugins
         private void TalkCallback(IrcMessageEventArgs message)
         {
             var talker = new TalkBehaviour(_markovChainString);
-            var reply = message.CreateReply(talker.GenerateRandomSentence());
-            Bot.SendMessage(reply);
+
+            // talk about
+            var parameters = GetParameters(message.Text);
+            if (parameters.Length >= 3 && parameters[1].ToLower() == "about")
+            {
+                message = message.CreateReply(talker.GenerateRandomSentenceFrom(parameters[2]));
+                if (parameters.Length == 4) // channel
+                {
+                    var channel = parameters[3].StartsWith("#") ? parameters[3] : $"#{parameters[3]}";
+                    Bot.SendTextToChannel(channel, message.Text);
+                    return;
+                }
+
+                if(message.Text.Split(' ').Length > 2)
+                    Bot.SendMessage(message);
+
+                return;
+            }
+
+            message = message.CreateReply(talker.GenerateRandomSentence());
+            if(message.Text.Split(' ').Length > 2)
+                Bot.SendMessage(message);
         }
 
         private string GetBrainFile(IrcMessageEventArgs message)
@@ -61,6 +83,11 @@ namespace vokram.Plugins
                 brainFile = command[1];
             }
             return brainFile;
+        }
+
+        private string[] GetParameters(string text)
+        {
+            return text.Split(' ');
         }
     }
 }

@@ -13,6 +13,10 @@ namespace vokram
 
         void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback);
         void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback);
+
         BasicClient SendMessage(IrcMessageEventArgs message);
+        BasicClient SendTextToChannel(string channel, string text);
+        BasicClient Join(string channel);
+        BasicClient Leave(string channel);
     }
 }

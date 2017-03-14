@@ -52,7 +52,10 @@ namespace vokram
             {
                 new Help(),
                 new MarkovBrain(),
-                new Uptime()
+                new Uptime(),
+                new Join(),
+                new Leave(),
+                new Say()
             };
         }
 
@@ -64,8 +67,15 @@ namespace vokram
 
         private void OnMessageReceived(object sender, IrcMessageEventArgs message)
         {
-            var subscriptions = SubscriptionsRepository.GetSubscriptions(message);
-            subscriptions.ForEach(callback => callback(message));
+            try
+            {
+                var subscriptions = SubscriptionsRepository.GetSubscriptions(message);
+                subscriptions.ForEach(callback => callback(message));
+            }
+            catch (Exception e)
+            {
+                SendMessage(message.CreateReply(e.Message));
+            }
         }
 
         public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)

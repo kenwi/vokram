@@ -57,5 +57,11 @@ namespace vokram
             DefaultClient.LocalUser.SendMessage(message.Targets, message.Text);
             return this;
         }
+
+        public BasicClient SendTextToChannel(string channel, string text)
+        {
+            DefaultClient.LocalUser.SendMessage(channel, text);
+            return this;
+        }
     }
 }

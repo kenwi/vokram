@@ -1,4 +1,7 @@
-﻿namespace vokram.Plugins
+﻿using System;
+using System.Linq;
+
+namespace vokram.Plugins
 {
     public abstract class PluginBase : IIrcPlugin
     {
