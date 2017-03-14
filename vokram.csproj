@@ -54,11 +54,11 @@
     <Compile Include="Interfaces\IIrcPlugin.cs" />
     <Compile Include="Plugins\Join.cs" />
     <Compile Include="Plugins\Leave.cs" />
+    <Compile Include="Plugins\MarkovBrain.cs" />
     <Compile Include="Plugins\MarkovBrain\LoadBehaviour.cs" />
     <Compile Include="Plugins\MarkovBrain\MarkovChain.cs" />
     <Compile Include="Plugins\MarkovBrain\MarkovChainNode.cs" />
     <Compile Include="Plugins\Help.cs" />
-    <Compile Include="Plugins\MarkovBrain\MarkovBrain.cs" />
     <Compile Include="Plugins\MarkovBrain\MarkovChainTrainer.cs" />
     <Compile Include="Plugins\PluginBase.cs" />
     <Compile Include="Plugins\Say.cs" />
