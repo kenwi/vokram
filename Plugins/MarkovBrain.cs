@@ -63,16 +63,20 @@ namespace vokram.Plugins
 
         private static void ReinitializeFromParameters(TalkBehaviour talker, ref string channel, ref string sentence, string[] parameters)
         {
-            if (parameters.Length >= 3 && parameters[1].ToLower() == "about")
-            {
-                var talkAboutText = parameters.Skip(2);
+            if (parameters.Length < 3 || parameters[1].ToLower() != "about")
+                return;
 
-                if (talkAboutText.Last().StartsWith("#"))
-                    channel = talkAboutText.Last();
+            var talkAboutWords = RemoveFirstKeywords(2, parameters);
+            if (talkAboutWords.Last().StartsWith("#"))
+                channel = parameters.Last();
 
-                talkAboutText = RemoveChannelName(talkAboutText);
-                sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
-            }
+            talkAboutWords = RemoveChannelName(talkAboutWords);
+            sentence = talker.GenerateRandomSentenceFrom(talkAboutWords);
+        }
+
+        private static string[] RemoveFirstKeywords(int count, string[] parameters)
+        {
+            return parameters.Skip(count).ToArray();
         }
 
         private void SendMessage(string channel, IrcMessageEventArgs reply)
@@ -81,10 +85,9 @@ namespace vokram.Plugins
                 Bot.SendTextToChannel(channel, reply.Text);
         }
 
-        private static IEnumerable<string> RemoveChannelName(IEnumerable<string> talkAboutText)
+        private static string[] RemoveChannelName(string[] words)
         {
-            talkAboutText = talkAboutText.Reverse().Skip(1).Reverse();
-            return talkAboutText;
+            return words.Reverse().Skip(1).Reverse().ToArray();
         }
 
         private string GetBrainFile(IrcMessageEventArgs message)
