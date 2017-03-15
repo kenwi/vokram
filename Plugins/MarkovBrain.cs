@@ -50,35 +50,41 @@ namespace vokram.Plugins
 
         private void TalkCallback(IrcMessageEventArgs message)
         {
+            var channel = message.Source.Name;
             var talker = new TalkBehaviour(_markovChainString);
+            var sentence = talker.GenerateRandomSentence();
 
-            // talk about
             var parameters = GetParameters(message.Text);
+            ReinitializeFromParameters(talker, ref channel, ref sentence, parameters);
+
+            var reply = message.CreateReply(sentence);
+            SendMessage(channel, reply);
+        }
+
+        private static void ReinitializeFromParameters(TalkBehaviour talker, ref string channel, ref string sentence, string[] parameters)
+        {
             if (parameters.Length >= 3 && parameters[1].ToLower() == "about")
             {
-                var talkAboutText = GetParameters(message.Text).Skip(2);
-                var sentence = string.Empty;
+                var talkAboutText = parameters.Skip(2);
 
                 if (talkAboutText.Last().StartsWith("#"))
-                {
-                    talkAboutText = talkAboutText.Reverse().Skip(1).Reverse();
-                    sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
+                    channel = talkAboutText.Last();
 
-                    Bot.SendTextToChannel(parameters.Last(), sentence);
-                }
-                else
-                {
-                    sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
-                    Bot.SendMessage(message.CreateReply(sentence));
-                }
-                return;
+                talkAboutText = RemoveChannelName(talkAboutText);
+                sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
             }
-            else
-            {
-                message = message.CreateReply(talker.GenerateRandomSentence());
-                if(message.Text.Split(' ').Length > 2)
-                    Bot.SendMessage(message);
-            }
+        }
+
+        private void SendMessage(string channel, IrcMessageEventArgs reply)
+        {
+            if (reply.Text.Split(' ').Length > 2)
+                Bot.SendTextToChannel(channel, reply.Text);
+        }
+
+        private static IEnumerable<string> RemoveChannelName(IEnumerable<string> talkAboutText)
+        {
+            talkAboutText = talkAboutText.Reverse().Skip(1).Reverse();
+            return talkAboutText;
         }
 
         private string GetBrainFile(IrcMessageEventArgs message)
