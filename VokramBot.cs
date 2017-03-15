@@ -14,7 +14,7 @@ namespace vokram
         public IrcUser Owner { get; set; }
         public string Name { get; set; }
         public IList<IIrcPlugin> Plugins { get; }
-        private ISubscriptionRepository SubscriptionsRepository { get; } 
+        public ISubscriptionRepository SubscriptionsRepository { get; }
             = new SubscriptionsRepository();
 
         public VokramBot(string host, string nick) : base(host)
@@ -36,7 +36,7 @@ namespace vokram
             };
         }
 
-        private List<IIrcPlugin> SetupPlugins()
+        private static List<IIrcPlugin> SetupPlugins()
         {
             return new List<IIrcPlugin>
             {
@@ -51,7 +51,7 @@ namespace vokram
             PrivateMessageReceived += OnMessageReceived;
         }
 
-        private void OnMessageReceived(object sender, IrcMessageEventArgs message)
+        protected void OnMessageReceived(object sender, IrcMessageEventArgs message)
         {
             try
             {
@@ -60,7 +60,8 @@ namespace vokram
             }
             catch (Exception e)
             {
-                SendMessage(message.CreateReply(e.Message));
+                //SendMessage(message.CreateReply(e.Message));
+                Console.WriteLine(e.Message);
             }
         }
 
