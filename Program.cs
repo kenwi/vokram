@@ -10,7 +10,7 @@ namespace vokram
     {
         public static void Main(string[] args)
         {
-            using (var vokram = new VokramBot("irc.freenode.net", "vokram2"))
+            using (var vokram = new VokramBot("irc.freenode.net", "vokram"))
             {
                 vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#hadamard");
                 vokram.ConnectAndEnterMainLoop();

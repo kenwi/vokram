@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using IrcDotNet;
 
@@ -19,7 +20,7 @@ namespace vokram.Plugins
             Bot.SubscribeToMessage("^!talk", TalkCallback);
             Bot.SubscribeToMessage("^!load", LoadCallback);
             Bot.SubscribeToMessage("^!save", SaveCallback);
-            Bot.SubscribeToAllMessages(TrainCallback);
+            //Bot.SubscribeToAllMessages(TrainCallback);
         }
 
         private void TrainCallback(IrcMessageEventArgs message)
@@ -56,25 +57,28 @@ namespace vokram.Plugins
             if (parameters.Length >= 3 && parameters[1].ToLower() == "about")
             {
                 var talkAboutText = GetParameters(message.Text).Skip(2);
-                var keyword = talkAboutText.Last();
+                var sentence = string.Empty;
 
-                message = message.CreateReply(talker.GenerateRandomSentenceFrom(keyword));
-                if (parameters.Length == 4) // channel
+                if (talkAboutText.Last().StartsWith("#"))
                 {
-                    var channel = parameters[3].StartsWith("#") ? parameters[3] : $"#{parameters[3]}";
-                    Bot.SendTextToChannel(channel, message.Text);
-                    return;
+                    talkAboutText = talkAboutText.Reverse().Skip(1).Reverse();
+                    sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
+
+                    Bot.SendTextToChannel(parameters.Last(), sentence);
                 }
-
-                if(message.Text.Split(' ').Length > 2)
-                    Bot.SendMessage(message);
-
+                else
+                {
+                    sentence = talker.GenerateRandomSentenceFrom(talkAboutText);
+                    Bot.SendMessage(message.CreateReply(sentence));
+                }
                 return;
             }
-
-            message = message.CreateReply(talker.GenerateRandomSentence());
-            if(message.Text.Split(' ').Length > 2)
-                Bot.SendMessage(message);
+            else
+            {
+                message = message.CreateReply(talker.GenerateRandomSentence());
+                if(message.Text.Split(' ').Length > 2)
+                    Bot.SendMessage(message);
+            }
         }
 
         private string GetBrainFile(IrcMessageEventArgs message)

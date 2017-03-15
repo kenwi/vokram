@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace IrcDotNet
 {
@@ -36,6 +37,20 @@ namespace IrcDotNet
             return WordsToSentence(words);
         }
 
+        public string GenerateRandomSentenceFrom(IEnumerable<string> talkAboutText)
+        {
+            var keyword = talkAboutText.Last();
+            int trials = 0;
+            string[] words;
+            do
+            {
+                words = _markovChainString.GenerateSequenceFrom(keyword).ToArray();
+            } while (words.Length < 3 && trials++ < 50);
+
+            var sentence = WordsToSentence(talkAboutText.Concat(words).ToArray());
+            return sentence;
+        }
+
         private static string WordsToSentence(string[] words)
         {
             var sentence = string.Join(" ", words) + ".";
@@ -47,5 +62,7 @@ namespace IrcDotNet
         {
             return text.First().ToString().ToUpper() + text.Substring(1);
         }
+
+
     }
 }

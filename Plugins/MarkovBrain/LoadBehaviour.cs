@@ -29,7 +29,7 @@ namespace IrcDotNet
             try
             {
                 using (var ms = new MemoryStream())
-                using (var fileStream = File.OpenRead(filename))
+                using (var fileStream = File.OpenRead(Path.Combine(Environment.CurrentDirectory, filename)))
                 {
                     var bytes = new byte[fileStream.Length];
                     fileStream.Read(bytes, 0, (int)fileStream.Length);
@@ -45,6 +45,7 @@ namespace IrcDotNet
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 throw new Exception($"Could not load brain '{filename}'");
             }
         }
