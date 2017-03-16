@@ -74,7 +74,7 @@ namespace Test
                 .ForEach(i =>
                 {
 
-                    message = new IrcMessageEventArgs(source, targets, "!talk about alle har jo, Encoding.ASCII);
+                    message = new IrcMessageEventArgs(source, targets, "!talk about alle har jo", Encoding.ASCII);
                     bot.MessageReceived(null, message);
                 });
 
