@@ -74,14 +74,14 @@ namespace Test
                 .ForEach(i =>
                 {
 
-                    message = new IrcMessageEventArgs(source, targets, "!talk about alle har jo en slik negerkid med sprit", Encoding.ASCII);
+                    message = new IrcMessageEventArgs(source, targets, "!talk about alle har jo, Encoding.ASCII);
                     bot.MessageReceived(null, message);
                 });
 
             Enumerable.Range(0, 10)
                 .ForEach(i =>
                 {
-                    message = new IrcMessageEventArgs(source, targets, "!talk about en slik negerkid #nff", Encoding.ASCII);
+                    message = new IrcMessageEventArgs(source, targets, "!talk about en slik #nff", Encoding.ASCII);
                     bot.MessageReceived(null, message);
                 });
         }
