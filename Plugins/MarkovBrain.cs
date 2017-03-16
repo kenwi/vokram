@@ -20,7 +20,7 @@ namespace vokram.Plugins
             Bot.SubscribeToMessage("^!talk", TalkCallback);
             Bot.SubscribeToMessage("^!load", LoadCallback);
             Bot.SubscribeToMessage("^!save", SaveCallback);
-            //Bot.SubscribeToAllMessages(TrainCallback);
+            Bot.SubscribeToAllMessages(TrainCallback);
         }
 
         private void TrainCallback(IrcMessageEventArgs message)
@@ -50,7 +50,7 @@ namespace vokram.Plugins
 
         private void TalkCallback(IrcMessageEventArgs message)
         {
-            var channel = message.Source.Name;
+            var channel = message.Targets.First().Name;
             var talker = new TalkBehaviour(_markovChainString);
             var sentence = talker.GenerateRandomSentence();
 
@@ -68,9 +68,11 @@ namespace vokram.Plugins
 
             var talkAboutWords = RemoveFirstKeywords(2, parameters);
             if (talkAboutWords.Last().StartsWith("#"))
+            {
                 channel = parameters.Last();
+                talkAboutWords = RemoveChannelName(talkAboutWords);
+            }
 
-            talkAboutWords = RemoveChannelName(talkAboutWords);
             sentence = talker.GenerateRandomSentenceFrom(talkAboutWords);
         }
 
