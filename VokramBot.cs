@@ -41,7 +41,7 @@ namespace vokram
             return new List<IIrcPlugin>
             {
                 new Help(), new MarkovBrain(), new Uptime(),
-                new Join(), new Leave(), new Say()
+                new Join(), new Leave(), new Say(), new Joke()
             };
         }
 
