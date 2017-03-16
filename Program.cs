@@ -27,9 +27,9 @@ namespace vokram
             var messages = File.ReadAllLines("training.txt");
             messages.ForEach(message =>
             {
-                var sub = message.Substring(0, 21);
+                var datetime = message.Substring(0, 21);
                 if (i++ % 1000 == 0)
-                    Console.WriteLine(sub);
+                    Console.WriteLine(datetime);
 
                 message = message.Remove(0, 22);
                 if (message.StartsWith("<"))
