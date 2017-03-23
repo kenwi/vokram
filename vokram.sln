@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram", "vokram.csproj", "{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram.Core", "vokram.Core\vokram.Core.csproj", "{B2116B2A-60DA-4671-A547-A97F92304223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{4ABA1608-A35D-4DFA-B843-2777252C5211}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram.Plugins", "vokram.Plugins\vokram.Plugins.csproj", "{85FD30A6-693F-44C4-8266-27CBB112C021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram", "vokram\vokram.csproj", "{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2116B2A-60DA-4671-A547-A97F92304223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2116B2A-60DA-4671-A547-A97F92304223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2116B2A-60DA-4671-A547-A97F92304223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2116B2A-60DA-4671-A547-A97F92304223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FD30A6-693F-44C4-8266-27CBB112C021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FD30A6-693F-44C4-8266-27CBB112C021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FD30A6-693F-44C4-8266-27CBB112C021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FD30A6-693F-44C4-8266-27CBB112C021}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4ABA1608-A35D-4DFA-B843-2777252C5211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4ABA1608-A35D-4DFA-B843-2777252C5211}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4ABA1608-A35D-4DFA-B843-2777252C5211}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4ABA1608-A35D-4DFA-B843-2777252C5211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
