@@ -6,13 +6,14 @@ namespace vokram.Core.Client
 {
     public abstract class BasicClient : Client
     {
-        public bool OfflineOnly { get; set; } = false;
-
         public IrcDotNet.IrcClient DefaultClient => Clients.SingleOrDefault();
+        public bool OfflineOnly { get; set; } = false;
         public bool IsConnected => Clients.Any();
+        public EventHandler<int> Tick;
+        public int TickInterval { get; set; } = 1000;
 
         private readonly string _host;
-
+        
         protected BasicClient(string host)
         {
             _host = host;
@@ -25,8 +26,10 @@ namespace vokram.Core.Client
                 Connect(_host);
                 while (true)
                 {
-                    System.Threading.Thread.Sleep(1000);
+                    System.Threading.Thread.Sleep(TickInterval);
                     MainLoop();
+                    Tick?.Invoke(this, TickInterval);
+                    
                     if (!IsConnected)
                         break;
                 }
@@ -36,6 +39,7 @@ namespace vokram.Core.Client
                 Console.WriteLine(e);
             }
         }
+
 
         protected abstract void MainLoop();
 

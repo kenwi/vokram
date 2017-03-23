@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using IrcDotNet;
 using IrcDotNet.Collections;
 using vokram.Core.Interfaces;
@@ -19,6 +18,7 @@ namespace vokram
         public ISubscriptionRepository SubscriptionsRepository { get; }
             = new SubscriptionsRepository();
 
+
         public VokramBot(string host, string nick) : base(host)
         {
             RegistrationInfo = SetupIdentity(nick);
@@ -27,39 +27,9 @@ namespace vokram
             SetupEvents();
         }
 
-        private class ConsoleSource : IIrcMessageSource
-        {
-            public string Name { get; set; } = "Console";
-        }
-
-        private class ConsoleTarget : IIrcMessageTarget
-        {
-            public string Name { get; set; } = "Console";
-        }
-
-        private class ConsoleMessage : IrcMessageEventArgs
-        {
-            public ConsoleMessage(IIrcMessageSource source, IList<IIrcMessageTarget> targets,
-                string text, Encoding encoding)
-                : base(source, targets, text, encoding)
-            {
-
-            }
-
-            public ConsoleMessage(string text) : base(new ConsoleSource(),
-                new List<IIrcMessageTarget>(){new ConsoleTarget()},
-                text,
-                Encoding.Default)
-            {
-
-            }
-        }
-
         protected override void MainLoop()
         {
-            var input = Console.ReadLine();
-            var message = new ConsoleMessage(input);
-            MessageReceived?.Invoke(this, message);
+
         }
 
         private IrcUserRegistrationInfo SetupIdentity(string nick)

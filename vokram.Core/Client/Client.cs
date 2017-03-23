@@ -19,6 +19,7 @@ namespace vokram.Core.Client
         public EventHandler<IrcChannelEventArgs> JoinedChannel;
         public EventHandler<IrcChannelEventArgs> LeftChannel;
 
+
         public IrcRegistrationInfo RegistrationInfo { get; set; }
 
         public void Connect(string server)
