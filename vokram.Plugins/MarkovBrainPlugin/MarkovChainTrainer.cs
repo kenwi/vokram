@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using IrcDotNet;
 
-namespace vokram.Plugins
+namespace vokram.Plugins.MarkovBrainPlugin
 {
     public class MarkovChainTrainer
     {

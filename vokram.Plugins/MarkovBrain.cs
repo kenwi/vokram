@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using IrcDotNet;
-using vokram.Core;
 using vokram.Core.Extensions;
+using vokram.Plugins.MarkovBrainPlugin;
 
 namespace vokram.Plugins
 {

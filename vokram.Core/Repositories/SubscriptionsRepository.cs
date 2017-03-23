@@ -10,7 +10,7 @@ namespace vokram.Core.Repositories
 {
     public class SubscriptionsRepository : ISubscriptionRepository
     {
-        private Dictionary<string, Action<IrcMessageEventArgs>> Subscriptions { get; } =
+        private Dictionary<string, Action<IrcMessageEventArgs>> Subscriptions { get; set; } =
             new Dictionary<string, Action<IrcMessageEventArgs>>();
 
         public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)
@@ -33,6 +33,11 @@ namespace vokram.Core.Repositories
                     list.Add(subscription.Value);
             });
             return list;
+        }
+
+        public void UnsubscribeAll()
+        {
+            Subscriptions = new Dictionary<string, Action<IrcMessageEventArgs>>();
         }
     }
 }

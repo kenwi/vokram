@@ -7,7 +7,7 @@ namespace vokram.Core.Interfaces
 {
     public interface IIrcBot
     {
-        IList<IIrcPlugin> Plugins { get; }
+        IList<IIrcPlugin> Plugins { get; set; }
         string Name { get; }
         IrcUser Owner { get; }
 
@@ -19,5 +19,6 @@ namespace vokram.Core.Interfaces
         BasicClient SendTextToChannel(string channel, string text);
         BasicClient Join(string channel);
         BasicClient Leave(string channel);
+        void UnSubscribeAllMessages();
     }
 }

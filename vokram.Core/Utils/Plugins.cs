@@ -12,7 +12,7 @@ namespace vokram.Core.Utils
         {
             var list = new List<IIrcPlugin>();
             var assembly = Assembly.LoadFile("vokram.Plugins.dll");
-            var types = assembly.GetTypes().Where(t => t.IsSubclassOf(typeof(IIrcPlugin)));
+            var types = assembly.GetTypes().Where(t => t.Namespace!= null && t.Namespace.Equals("vokram.Plugins") && !t.IsAbstract);
             types.ForEach(t =>
             {
                 var plugin = assembly.CreateInstance(t.FullName) as IIrcPlugin;

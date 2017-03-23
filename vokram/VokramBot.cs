@@ -14,7 +14,8 @@ namespace vokram
     {
         public IrcUser Owner { get; set; }
         public string Name { get; set; }
-        public IList<IIrcPlugin> Plugins { get; }
+        public IList<IIrcPlugin> Plugins { get; set; }
+
         public ISubscriptionRepository SubscriptionsRepository { get; }
             = new SubscriptionsRepository();
 
@@ -67,6 +68,9 @@ namespace vokram
 
         public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
             => SubscriptionsRepository.SubscribeToAllMessages(callback);
+
+        public void UnSubscribeAllMessages()
+            => SubscriptionsRepository.UnsubscribeAll();
 
         public void SubscribeToJoinEvents(string channel)
         {

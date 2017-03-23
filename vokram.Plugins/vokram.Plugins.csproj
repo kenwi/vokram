@@ -53,14 +53,15 @@
     <Compile Include="Joke.cs" />
     <Compile Include="Leave.cs" />
     <Compile Include="MarkovBrain.cs" />
-    <Compile Include="MarkovBrain\LoadBehaviour.cs" />
-    <Compile Include="MarkovBrain\MarkovChain.cs" />
-    <Compile Include="MarkovBrain\MarkovChainNode.cs" />
-    <Compile Include="MarkovBrain\MarkovChainTrainer.cs" />
-    <Compile Include="MarkovBrain\SaveBehaviour.cs" />
-    <Compile Include="MarkovBrain\TalkBehaviour.cs" />
+    <Compile Include="MarkovBrainPlugin\LoadBehaviour.cs" />
+    <Compile Include="MarkovBrainPlugin\MarkovChain.cs" />
+    <Compile Include="MarkovBrainPlugin\MarkovChainNode.cs" />
+    <Compile Include="MarkovBrainPlugin\MarkovChainTrainer.cs" />
+    <Compile Include="MarkovBrainPlugin\SaveBehaviour.cs" />
+    <Compile Include="MarkovBrainPlugin\TalkBehaviour.cs" />
     <Compile Include="PluginBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reload.cs" />
     <Compile Include="Say.cs" />
     <Compile Include="Uptime.cs" />
   </ItemGroup>

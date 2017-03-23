@@ -3,6 +3,7 @@ using System.IO;
 using IrcDotNet;
 using IrcDotNet.Collections;
 using vokram.Plugins;
+using vokram.Plugins.MarkovBrainPlugin;
 
 namespace vokram
 {
