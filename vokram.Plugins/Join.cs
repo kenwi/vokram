@@ -9,9 +9,9 @@ namespace vokram.Plugins
             Bot.SubscribeToMessage("^!join", Callback);
         }
 
-        private void Callback(IrcMessageEventArgs ircMessageEventArgs)
+        private void Callback(IrcMessageEventArgs message)
         {
-            var channel = ircMessageEventArgs.Text.Split(' ')[1];
+            var channel = message.Text.Split(' ')[1];
             channel = channel.StartsWith("#") ? channel : $"#{channel}";
             Bot.Join(channel);
         }
