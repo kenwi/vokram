@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram.Plugins", "vokram.Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram", "vokram\vokram.csproj", "{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram.Trainer", "vokram.Trainer\vokram.Trainer.csproj", "{0968D67F-65D9-4E6E-A907-E688EEA2217A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35D63F72-2AA5-40F6-B7FB-5CFBB92576DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
