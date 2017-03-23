@@ -59,7 +59,7 @@ namespace vokram
             catch (Exception e)
             {
                 var messageConsoleRedirect = new ConsoleMessage(e.Message);
-                SendMessage(messageConsoleRedirect);
+                MessageReceived?.Invoke(this, messageConsoleRedirect);
             }
         }
 
