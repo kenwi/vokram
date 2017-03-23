@@ -4,7 +4,7 @@ using IrcDotNet;
 
 namespace vokram.Core.Client
 {
-    public class BasicClient : Client
+    public abstract class BasicClient : Client
     {
         public bool OfflineOnly { get; set; } = false;
 
@@ -26,6 +26,7 @@ namespace vokram.Core.Client
                 while (true)
                 {
                     System.Threading.Thread.Sleep(1000);
+                    MainLoop();
                     if (!IsConnected)
                         break;
                 }
@@ -35,6 +36,8 @@ namespace vokram.Core.Client
                 Console.WriteLine(e);
             }
         }
+
+        protected abstract void MainLoop();
 
         public BasicClient Join(string channel)
         {
@@ -71,11 +74,12 @@ namespace vokram.Core.Client
 
         public BasicClient SendMessage(IrcMessageEventArgs message)
         {
-            if (OfflineOnly)
+            if (OfflineOnly || message.Source.Name.Equals("Console"))
             {
                 Console.WriteLine($"{message.Text}");
                 return this;
             }
+
             DefaultClient.LocalUser.SendMessage(message.Targets, message.Text);
             return this;
         }
