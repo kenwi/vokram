@@ -14,6 +14,7 @@ namespace vokram.Trainer
             Load("vokram.txt");
 
             Console.WriteLine("Done.");
+            Console.Beep();
             Console.ReadKey();
         }
 
