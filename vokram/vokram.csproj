@@ -55,10 +55,6 @@
       <Project>{B2116B2A-60DA-4671-A547-A97F92304223}</Project>
       <Name>vokram.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\vokram.Plugins\vokram.Plugins.csproj">
-      <Project>{85FD30A6-693F-44C4-8266-27CBB112C021}</Project>
-      <Name>vokram.Plugins</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
