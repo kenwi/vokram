@@ -23,6 +23,9 @@ namespace vokram.Core.Client
 
         public void Connect(string server)
         {
+            if(string.IsNullOrEmpty(server))
+                throw new NullReferenceException("Server parameter must not be null.");
+
             if (RegistrationInfo == null)
                 throw new NullReferenceException("RegistrationInfo must not be null on Connect(string);");
 
