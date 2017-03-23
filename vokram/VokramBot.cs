@@ -58,8 +58,8 @@ namespace vokram
             }
             catch (Exception e)
             {
-                //SendMessage(message.CreateReply(e.Message));
-                Console.WriteLine(e.Message);
+                var messageConsoleRedirect = new ConsoleMessage(e.Message);
+                SendMessage(messageConsoleRedirect);
             }
         }
 
