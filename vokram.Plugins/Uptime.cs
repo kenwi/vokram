@@ -1,5 +1,6 @@
 ﻿using IrcDotNet;
 using System;
+using vokram.Core;
 using vokram.Core.Extensions;
 
 namespace vokram.Plugins

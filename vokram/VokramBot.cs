@@ -7,7 +7,6 @@ using IrcDotNet.Collections;
 using vokram.Core.Interfaces;
 using vokram.Core.Repositories;
 using vokram.Core.Client;
-using vokram.Plugins;
 
 namespace vokram
 {
@@ -40,11 +39,7 @@ namespace vokram
 
         private static List<IIrcPlugin> SetupPlugins()
         {
-            return new List<IIrcPlugin>
-            {
-                new Help(), new MarkovBrain(), new Uptime(),
-                new Join(), new Leave(), new Say(), new Joke()
-            };
+            return Core.Utils.Plugins.LoadAll();
         }
 
         private void SetupEvents()
