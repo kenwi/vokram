@@ -19,10 +19,11 @@ namespace vokram.Core.Repositories
                 Subscriptions.Add(trigger, callback);
         }
 
+        /*
         public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
         {
             Subscriptions.Add("^(.?$|[^!].*)", callback);
-        }
+        }*/
 
         public List<Action<IrcMessageEventArgs>> GetSubscriptions(IrcMessageEventArgs message)
         {

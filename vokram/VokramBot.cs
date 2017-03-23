@@ -67,7 +67,7 @@ namespace vokram
             => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
 
         public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
-            => SubscriptionsRepository.SubscribeToAllMessages(callback);
+            => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
 
         public void UnSubscribeAllMessages()
             => SubscriptionsRepository.UnsubscribeAll();
