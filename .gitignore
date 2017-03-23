@@ -10,3 +10,12 @@
 /packages/NUnit.3.6.1
 /Test/bin/Debug
 /Test/obj/Debug
+/vokram.Plugins/bin/Debug
+/vokram.Plugins/obj/Debug
+/vokram.Core/bin/Debug
+/vokram.Core/obj/Debug
+/vokram/bin/Debug
+/vokram/obj/Debug
+/Test/obj/Release
+/obj/Release
+/bin/Release
