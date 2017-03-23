@@ -27,11 +27,6 @@ namespace vokram
             SetupEvents();
         }
 
-        protected override void MainLoop()
-        {
-
-        }
-
         private IrcUserRegistrationInfo SetupIdentity(string nick)
         {
             Name = nick;

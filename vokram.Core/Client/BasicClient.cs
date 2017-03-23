@@ -27,7 +27,6 @@ namespace vokram.Core.Client
                 while (true)
                 {
                     System.Threading.Thread.Sleep(TickInterval);
-                    MainLoop();
                     Tick?.Invoke(this, TickInterval);
                     
                     if (!IsConnected)
@@ -39,9 +38,6 @@ namespace vokram.Core.Client
                 Console.WriteLine(e);
             }
         }
-
-
-        protected abstract void MainLoop();
 
         public BasicClient Join(string channel)
         {
