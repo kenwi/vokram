@@ -11,6 +11,7 @@ namespace vokram.Core.Utils
     {
         public static List<IIrcPlugin> LoadAll()
         {
+            /*
             var list = new List<IIrcPlugin>();
             var domain = AppDomain.CreateDomain("Pluginsyo");
             var assemblyName = new AssemblyName();
@@ -24,7 +25,7 @@ namespace vokram.Core.Utils
                 list.Add(plugin);
             });
             return list;
-            /*
+            */
             var list = new List<IIrcPlugin>();
             var assembly = Assembly.LoadFile("vokram.Plugins.dll");
             var types = assembly.GetTypes().Where(t => t.Namespace!= null && t.Namespace.Equals("vokram.Plugins") && !t.IsAbstract);
@@ -33,7 +34,7 @@ namespace vokram.Core.Utils
                 var plugin = Activator.CreateInstance(t) as IIrcPlugin;
                 list.Add(plugin);
             });
-            return list;*/
+            return list;
         }
     }
 }
