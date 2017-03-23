@@ -26,9 +26,6 @@ namespace vokram.Core.Utils
             return list;
             /*
             var list = new List<IIrcPlugin>();
-
-
-
             var assembly = Assembly.LoadFile("vokram.Plugins.dll");
             var types = assembly.GetTypes().Where(t => t.Namespace!= null && t.Namespace.Equals("vokram.Plugins") && !t.IsAbstract);
             types.ForEach(t =>
