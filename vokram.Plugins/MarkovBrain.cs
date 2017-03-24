@@ -113,9 +113,9 @@ namespace vokram.Plugins
 
         public static void Train(string trainingFile, string brainFile, Action<string> outputAction)
         {
+            outputAction?.Invoke($"Started training from '{trainingFile}'.");
             var markovChainString = new MarkovChainString();
             var markovChainTrainer = new MarkovChainTrainer(markovChainString);
-            var saveBehaviour = new SaveBehaviour(markovChainString, brainFile);
 
             int i = 0;
             var messages = File.ReadAllLines(trainingFile);
@@ -134,20 +134,31 @@ namespace vokram.Plugins
                     markovChainTrainer.Train(message);
                 }
             });
-
-            saveBehaviour.Process();
+            outputAction?.Invoke($"Finished training.");
         }
 
         public static void Load(string brainFile, Action<string> outputAction)
         {
+            outputAction?.Invoke($"Loading '{brainFile}'.");
+
             var markovChainString = new MarkovChainString();
             var loadBehaviour = new LoadBehaviour(markovChainString, brainFile);
             var talkBehaviour = new TalkBehaviour(markovChainString);
 
+            outputAction?.Invoke($"Generating sample.");
             loadBehaviour.Process();
             var sample = talkBehaviour.GenerateRandomSentence();
+            outputAction?.Invoke($"Sample: '{sample}'.");
+        }
 
-            outputAction?.Invoke(sample);
+        public static void Save(string brainFile, Action<string> outputAction)
+        {
+            outputAction?.Invoke($"Saving '{brainFile}'.");
+
+            var markovChainString = new MarkovChainString();
+            var saveBehaviour = new SaveBehaviour(markovChainString, brainFile);
+            saveBehaviour.Process();
+            outputAction?.Invoke($"Saved to {brainFile}");
         }
     }
 }
