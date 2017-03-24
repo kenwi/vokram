@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 using IrcDotNet;
 using IrcDotNet.Collections;
 using vokram.Core.Extensions;
@@ -111,7 +112,7 @@ namespace vokram.Plugins
             return text.Split(' ');
         }
 
-        public static void Train(string trainingFile, string brainFile, Action<string> outputAction)
+        public static MarkovChainString Train(string trainingFile, string brainFile, Action<string> outputAction)
         {
             outputAction?.Invoke($"Started training from '{trainingFile}'.");
             var markovChainString = new MarkovChainString();
@@ -121,6 +122,9 @@ namespace vokram.Plugins
             var messages = File.ReadAllLines(trainingFile);
             messages.ForEach(message =>
             {
+                if (message.StartsWith("#"))
+                    return;
+
                 var datetime = message.Substring(0, 21);
                 if (i++ % 1000 == 0)
                     outputAction?.Invoke(datetime);
@@ -135,9 +139,10 @@ namespace vokram.Plugins
                 }
             });
             outputAction?.Invoke($"Finished training.");
+            return markovChainString;
         }
 
-        public static void Load(string brainFile, Action<string> outputAction)
+        public static MarkovChainString Load(string brainFile, Action<string> outputAction)
         {
             outputAction?.Invoke($"Loading '{brainFile}'.");
 
@@ -147,16 +152,17 @@ namespace vokram.Plugins
 
             outputAction?.Invoke($"Generating sample.");
             loadBehaviour.Process();
+
             var sample = talkBehaviour.GenerateRandomSentence();
             outputAction?.Invoke($"Sample: '{sample}'.");
+            return markovChainString;
         }
 
-        public static void Save(string brainFile, Action<string> outputAction)
+        public static void Save(string brainFile, MarkovChainString markovChain, Action<string> outputAction)
         {
             outputAction?.Invoke($"Saving '{brainFile}'.");
 
-            var markovChainString = new MarkovChainString();
-            var saveBehaviour = new SaveBehaviour(markovChainString, brainFile);
+            var saveBehaviour = new SaveBehaviour(markovChain, brainFile);
             saveBehaviour.Process();
             outputAction?.Invoke($"Saved to {brainFile}");
         }
