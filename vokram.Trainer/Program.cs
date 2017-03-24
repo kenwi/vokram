@@ -8,8 +8,8 @@ namespace vokram.Trainer
     {
         private static void Main(string[] args)
         {
-            var traininfFile = args.FirstOrDefault() ?? "training.txt";
-            var brainFile = args.Skip(1).FirstOrDefault() ?? "vokram.txt";
+            var traininfFile = GetArgumentValue(args, "-t") ?? "training.txt";
+            var brainFile = GetArgumentValue(args, "-b") ?? "vokram.txt";
 
             MarkovBrain.Train(traininfFile, brainFile, Console.WriteLine);
             MarkovBrain.Save(brainFile, Console.WriteLine);
@@ -18,6 +18,11 @@ namespace vokram.Trainer
             Console.WriteLine("Done.");
             Console.Beep();
             Console.ReadKey();
+        }
+
+        private static string GetArgumentValue(string[] args, string parameter)
+        {
+            return args.SingleOrDefault(argument => argument.Contains(parameter))?.Split('=').Last();
         }
     }
 }
