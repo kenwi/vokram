@@ -6,6 +6,7 @@ using IrcDotNet.Collections;
 using vokram.Core.Interfaces;
 using vokram.Core.Repositories;
 using vokram.Core.Client;
+using vokram.Plugins;
 
 namespace vokram
 {
@@ -40,7 +41,11 @@ namespace vokram
 
         private static List<IIrcPlugin> SetupPlugins()
         {
-            return Core.Utils.Plugins.LoadAll();
+            //return Core.Utils.Plugins.LoadAll();
+            return new List<IIrcPlugin>
+            {
+                new Help(), new Join(), new Joke(), new Leave(), new MarkovBrain(), new Uptime()
+            };
         }
 
         private void SetupEvents()
@@ -59,7 +64,7 @@ namespace vokram
             catch (Exception e)
             {
                 var messageConsoleRedirect = new ConsoleMessage(e.Message);
-                MessageReceived?.Invoke(this, messageConsoleRedirect);
+                SendMessage(messageConsoleRedirect);
             }
         }
 

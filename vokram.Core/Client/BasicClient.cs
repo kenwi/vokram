@@ -86,7 +86,7 @@ namespace vokram.Core.Client
 
         public BasicClient SendTextToChannel(string channel, string text)
         {
-            if (OfflineOnly)
+            if (OfflineOnly || channel.Equals("Console"))
             {
                 Console.WriteLine($"{channel}: {text}");
                 return this;
