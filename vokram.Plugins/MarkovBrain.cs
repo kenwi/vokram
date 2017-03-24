@@ -1,5 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.IO;
+using System.Linq;
 using IrcDotNet;
+using IrcDotNet.Collections;
 using vokram.Core.Extensions;
 using vokram.Plugins.MarkovBrainPlugin;
 
@@ -106,6 +109,45 @@ namespace vokram.Plugins
         private string[] GetParameters(string text)
         {
             return text.Split(' ');
+        }
+
+        public static void Train(string trainingFile, string brainFile, Action<string> outputAction)
+        {
+            var markovChainString = new MarkovChainString();
+            var markovChainTrainer = new MarkovChainTrainer(markovChainString);
+            var saveBehaviour = new SaveBehaviour(markovChainString, brainFile);
+
+            int i = 0;
+            var messages = File.ReadAllLines(trainingFile);
+            messages.ForEach(message =>
+            {
+                var datetime = message.Substring(0, 21);
+                if (i++ % 1000 == 0)
+                    outputAction?.Invoke(datetime);
+
+                message = message.Remove(0, 22);
+                if (message.StartsWith("<"))
+                {
+                    message = message.Split('>')[1];
+                    message = message.Remove(0, 1);
+
+                    markovChainTrainer.Train(message);
+                }
+            });
+
+            saveBehaviour.Process();
+        }
+
+        public static void Load(string brainFile, Action<string> outputAction)
+        {
+            var markovChainString = new MarkovChainString();
+            var loadBehaviour = new LoadBehaviour(markovChainString, brainFile);
+            var talkBehaviour = new TalkBehaviour(markovChainString);
+
+            loadBehaviour.Process();
+            var sample = talkBehaviour.GenerateRandomSentence();
+
+            outputAction?.Invoke(sample);
         }
     }
 }
