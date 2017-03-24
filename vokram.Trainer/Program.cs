@@ -11,13 +11,12 @@ namespace vokram.Trainer
             var traininfFile = GetArgumentValue(args, "-t") ?? "training.txt";
             var brainFile = GetArgumentValue(args, "-b") ?? "vokram.txt";
 
-            MarkovBrain.Train(traininfFile, brainFile, Console.WriteLine);
-            MarkovBrain.Save(brainFile, Console.WriteLine);
+            var brain = MarkovBrain.Train(traininfFile, brainFile, Console.WriteLine);
+            MarkovBrain.Save(brainFile, brain, Console.WriteLine);
             MarkovBrain.Load(brainFile, Console.WriteLine);
 
             Console.WriteLine("Done.");
             Console.Beep();
-            Console.ReadKey();
         }
 
         private static string GetArgumentValue(string[] args, string parameter)
