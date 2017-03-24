@@ -29,7 +29,9 @@ namespace vokram.Core.Utils
             */
             var list = new List<IIrcPlugin>();
             var assembly = Assembly.LoadFile(Path.Combine(Environment.CurrentDirectory, "vokram.Plugins.dll"));
-            var types = assembly.GetTypes().Where(t => t.Namespace!= null && t.Namespace.Equals("vokram.Plugins") && !t.IsAbstract);
+            var types = assembly.GetTypes().Where(t => t.Namespace!= null && 
+                                                    t.Namespace.Equals("vokram.Plugins") && 
+                                                    !t.IsAbstract && !t.BaseType.Name.Equals("Object"));
             types.ForEach(t =>
             {
                 var plugin = assembly.CreateInstance(t.FullName) as IIrcPlugin;
