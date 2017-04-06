@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram", "vokram\vokram.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vokram.Trainer", "vokram.Trainer\vokram.Trainer.csproj", "{0968D67F-65D9-4E6E-A907-E688EEA2217A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Echelon", "..\..\Documents\Visual Studio 2017\Projects\Echelon\Echelon\Echelon.csproj", "{1D7C3606-A129-4142-A30D-F05C16007149}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Echelon", "Echelon\Echelon.csproj", "{581A34ED-59C2-457A-8589-D202F9FD5596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0968D67F-65D9-4E6E-A907-E688EEA2217A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D7C3606-A129-4142-A30D-F05C16007149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D7C3606-A129-4142-A30D-F05C16007149}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D7C3606-A129-4142-A30D-F05C16007149}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D7C3606-A129-4142-A30D-F05C16007149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581A34ED-59C2-457A-8589-D202F9FD5596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581A34ED-59C2-457A-8589-D202F9FD5596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581A34ED-59C2-457A-8589-D202F9FD5596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581A34ED-59C2-457A-8589-D202F9FD5596}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

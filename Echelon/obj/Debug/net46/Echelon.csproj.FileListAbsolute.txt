@@ -1,0 +1,314 @@
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.exe.config
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.deps.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.runtimeconfig.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.runtimeconfig.dev.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.exe
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Echelon.pdb
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\libuv.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.ApplicationInsights.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AI.Agent.Intercept.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.ApplicationInsights.AspNetCore.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AI.DependencyCollector.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AI.PerfCounterCollector.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Antiforgery.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Authorization.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Cors.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Cryptography.Internal.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.DataProtection.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Diagnostics.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Html.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Extensions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Features.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.HttpOverrides.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.JsonPatch.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Localization.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Core.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Cors.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Localization.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Razor.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Razor.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Razor.Runtime.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Routing.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Routing.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Server.IISIntegration.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Server.Kestrel.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.StaticFiles.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNetCore.WebUtilities.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.CodeAnalysis.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.DotNet.PlatformAbstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Caching.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Caching.Memory.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Binder.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.FileExtensions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Json.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyInjection.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyModel.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.DiagnosticAdapter.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Composite.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Physical.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.FileSystemGlobbing.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Localization.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Localization.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Abstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Console.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Debug.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.ObjectPool.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Options.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.PlatformAbstractions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.Primitives.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Extensions.WebEncoders.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Net.Http.Headers.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.VisualStudio.Web.BrowserLink.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Win32.Primitives.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Newtonsoft.Json.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.AppContext.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Buffers.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Collections.Immutable.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.ComponentModel.Primitives.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.ComponentModel.TypeConverter.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Console.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Diagnostics.DiagnosticSource.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Diagnostics.FileVersionInfo.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Diagnostics.StackTrace.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Globalization.Calendars.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.IO.Compression.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.IO.Compression.ZipFile.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.IO.FileSystem.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.IO.FileSystem.Primitives.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Net.Http.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Net.Sockets.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Numerics.Vectors.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Reflection.Metadata.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Runtime.CompilerServices.Unsafe.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Runtime.InteropServices.RuntimeInformation.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Security.Cryptography.Algorithms.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Security.Cryptography.Encoding.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Security.Cryptography.Primitives.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Security.Cryptography.X509Certificates.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Text.Encoding.CodePages.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Text.Encodings.Web.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Threading.Tasks.Extensions.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Threading.Thread.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Xml.ReaderWriter.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Xml.XmlDocument.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Xml.XPath.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Xml.XPath.XDocument.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\net46\Echelon.csprojResolveAssemblyReference.cache
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\net46\Echelon.csproj.Echelon.exe.config
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\net46\Echelon.AssemblyInfo.cs
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\net46\Echelon.exe
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\net46\Echelon.pdb
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\IrcDotNet.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\vokram.Core.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\IrcDotNet.xml
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\vokram.Core.pdb
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Owin.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Owin.Security.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Owin.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.ChakraCore.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Core.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Msie.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\ClearScript.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.V8.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JSPool.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\MsieJavaScriptEngine.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\React.Core.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\VroomJs.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.V8.resources.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\MsieJavaScriptEngine.resources.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.Mvc.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.Razor.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.Helpers.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.WebPages.Deployment.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.WebPages.Razor.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\System.Web.WebPages.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\Microsoft.Web.Infrastructure.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\React.Web.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\React.Web.Mvc4.dll
+C:\Users\wilken\Documents\Visual Studio 2017\Projects\Echelon\Echelon\bin\Debug\net46\WebActivatorEx.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.exe.config
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.deps.json
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.runtimeconfig.json
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.runtimeconfig.dev.json
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.exe
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Echelon.pdb
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\libuv.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.ChakraCore.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Core.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Msie.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\ClearScript.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.V8.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JSPool.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.ApplicationInsights.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AI.Agent.Intercept.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AI.DependencyCollector.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.Mvc.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.Razor.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.Helpers.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.WebPages.Deployment.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.WebPages.Razor.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Web.WebPages.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Authorization.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Cors.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Diagnostics.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Localization.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Razor.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Routing.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.StaticFiles.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.CodeAnalysis.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.DependencyModel.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Localization.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Console.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.ObjectPool.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Options.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.Primitives.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Extensions.WebEncoders.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Net.Http.Headers.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Owin.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Owin.Security.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.VisualStudio.Web.BrowserLink.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Web.Infrastructure.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Microsoft.Win32.Primitives.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\MsieJavaScriptEngine.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Newtonsoft.Json.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\Owin.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\React.Core.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\React.Web.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\React.Web.Mvc4.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.AppContext.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Buffers.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Collections.Immutable.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.ComponentModel.Primitives.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.ComponentModel.TypeConverter.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Console.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Diagnostics.DiagnosticSource.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Diagnostics.FileVersionInfo.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Diagnostics.StackTrace.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Globalization.Calendars.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.IO.Compression.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.IO.Compression.ZipFile.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.IO.FileSystem.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.IO.FileSystem.Primitives.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Net.Http.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Net.Sockets.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Numerics.Vectors.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Reflection.Metadata.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Security.Cryptography.Algorithms.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Security.Cryptography.Encoding.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Security.Cryptography.Primitives.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Security.Cryptography.X509Certificates.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Text.Encoding.CodePages.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Text.Encodings.Web.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Threading.Tasks.Extensions.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Threading.Thread.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Xml.ReaderWriter.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Xml.XmlDocument.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Xml.XPath.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\System.Xml.XPath.XDocument.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\VroomJs.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\WebActivatorEx.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\JavaScriptEngineSwitcher.V8.resources.dll
+C:\Users\wilken\Source\vokram\Echelon\bin\Debug\net46\MsieJavaScriptEngine.resources.dll
+C:\Users\wilken\Source\vokram\Echelon\obj\Debug\net46\Echelon.csprojResolveAssemblyReference.cache
+C:\Users\wilken\Source\vokram\Echelon\obj\Debug\net46\Echelon.csproj.Echelon.exe.config
+C:\Users\wilken\Source\vokram\Echelon\obj\Debug\net46\Echelon.AssemblyInfo.cs
+C:\Users\wilken\Source\vokram\Echelon\obj\Debug\net46\Echelon.exe
+C:\Users\wilken\Source\vokram\Echelon\obj\Debug\net46\Echelon.pdb

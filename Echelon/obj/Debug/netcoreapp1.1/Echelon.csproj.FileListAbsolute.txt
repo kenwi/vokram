@@ -1,0 +1,9 @@
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.deps.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.dev.json
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.pdb
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.csprojResolveAssemblyReference.cache
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.AssemblyInfo.cs
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.dll
+c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.pdb
