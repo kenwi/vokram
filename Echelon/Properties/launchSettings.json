@@ -1,9 +1,9 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:51402/",
+      "applicationUrl": "http://localhost:52665/",
       "sslPort": 0
     }
   },
@@ -16,12 +16,7 @@
       }
     },
     "Echelon": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:51403"
+      "commandName": "Project"
     }
   }
 }

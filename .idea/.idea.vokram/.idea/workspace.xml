@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebda04b2-b9fc-4028-9031-2272ddb20b29" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/Echelon.csproj.user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/Properties/launchSettings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/Views/Home/About.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/Views/Home/Contact.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/Views/Shared/_ValidationScriptsPartial.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/appsettings.Development.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/ClearScript.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.deps.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.exe.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.runtimeconfig.dev.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Echelon.runtimeconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/IrcDotNet.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/IrcDotNet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JSPool.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.ChakraCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.ChakraCore.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.Core.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.Msie.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.V8.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/JavaScriptEngineSwitcher.V8.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AI.Agent.Intercept.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AI.DependencyCollector.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AI.PerfCounterCollector.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AI.ServerTelemetryChannel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.ApplicationInsights.AspNetCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.ApplicationInsights.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNet.SignalR.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNet.SignalR.SystemWeb.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Antiforgery.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Authorization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Cors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Cryptography.Internal.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.DataProtection.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.DataProtection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Diagnostics.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Hosting.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Hosting.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Html.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Http.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Http.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Http.Features.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Http.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.HttpOverrides.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.JsonPatch.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Cors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Razor.Host.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.TagHelpers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Mvc.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Razor.Runtime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Routing.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Routing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Server.IISIntegration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.Server.Kestrel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.StaticFiles.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.AspNetCore.WebUtilities.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.CodeAnalysis.CSharp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.CodeAnalysis.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.DotNet.PlatformAbstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Caching.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Caching.Memory.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.Binder.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.FileExtensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Configuration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.DependencyInjection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.DependencyModel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.DiagnosticAdapter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.FileProviders.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.FileProviders.Composite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.FileProviders.Physical.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.FileSystemGlobbing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Globalization.CultureInfoCache.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Localization.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Logging.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Logging.Console.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Logging.Debug.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Logging.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.ObjectPool.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Options.ConfigurationExtensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Options.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.PlatformAbstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Extensions.WebEncoders.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Net.Http.Headers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Owin.Host.SystemWeb.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Owin.Security.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Owin.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.VisualStudio.Web.BrowserLink.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Web.Infrastructure.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Microsoft.Win32.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/MsieJavaScriptEngine.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/MsieJavaScriptEngine.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Newtonsoft.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/Owin.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/React.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/React.Web.Mvc4.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/React.Web.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.AppContext.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Buffers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Collections.Immutable.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.ComponentModel.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.ComponentModel.TypeConverter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Console.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Diagnostics.DiagnosticSource.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Diagnostics.FileVersionInfo.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Diagnostics.StackTrace.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Globalization.Calendars.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.IO.Compression.ZipFile.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.IO.Compression.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.IO.FileSystem.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.IO.FileSystem.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Net.Http.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Net.Sockets.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Numerics.Vectors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Reflection.Metadata.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Runtime.CompilerServices.Unsafe.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Runtime.InteropServices.RuntimeInformation.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Security.Cryptography.Algorithms.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Security.Cryptography.Encoding.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Security.Cryptography.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Security.Cryptography.X509Certificates.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Text.Encoding.CodePages.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Text.Encodings.Web.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Threading.Tasks.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Threading.Thread.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.Helpers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.Mvc.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.WebPages.Deployment.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.WebPages.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Web.WebPages.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Xml.ReaderWriter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Xml.XPath.XDocument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Xml.XPath.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/System.Xml.XmlDocument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/VroomJs.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/WebActivatorEx.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/libuv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/vokram.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/net46/vokram.Core.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/bundleconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/CoreCompileInputs.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.csproj.Echelon.exe.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.csproj.FileListAbsolute.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.csprojResolveAssemblyReference.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/Echelon.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/net46/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/css/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/css/site.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/images/banner1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/images/banner2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/images/banner3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/images/banner4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/js/vokram.tsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/bootstrap/dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation-unobtrusive/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery/dist/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery/dist/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Echelon/wwwroot/lib/jquery/dist/jquery.min.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.dll" afterPath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.pdb" afterPath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/CoreCompileInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.csprojResolveAssemblyReference.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.dll" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.pdb" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/wwwroot/favicon.ico" afterPath="$PROJECT_DIR$/Echelon/wwwroot/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.vokram/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.vokram/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Controllers/HomeController.cs" afterPath="$PROJECT_DIR$/Echelon/Controllers/HomeController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Echelon.csproj" afterPath="$PROJECT_DIR$/Echelon/Echelon.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Program.cs" afterPath="$PROJECT_DIR$/Echelon/Program.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Startup.cs" afterPath="$PROJECT_DIR$/Echelon/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Views/Home/Index.cshtml" afterPath="$PROJECT_DIR$/Echelon/Views/Home/Index.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Views/Shared/Error.cshtml" afterPath="$PROJECT_DIR$/Echelon/Views/Shared/Error.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Views/Shared/_Layout.cshtml" afterPath="$PROJECT_DIR$/Echelon/Views/Shared/_Layout.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Views/_ViewImports.cshtml" afterPath="$PROJECT_DIR$/Echelon/Views/_ViewImports.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/Views/_ViewStart.cshtml" afterPath="$PROJECT_DIR$/Echelon/Views/_ViewStart.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/appsettings.json" afterPath="$PROJECT_DIR$/Echelon/appsettings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.deps.json" afterPath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.deps.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.runtimeconfig.dev.json" afterPath="$PROJECT_DIR$/Echelon/bin/Debug/netcoreapp1.1/Echelon.runtimeconfig.dev.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.AssemblyInfo.cs" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.AssemblyInfo.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/Echelon/obj/Debug/netcoreapp1.1/Echelon.csproj.FileListAbsolute.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Echelon.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/Echelon/obj/Echelon.csproj.nuget.g.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/Echelon.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/Echelon/obj/Echelon.csproj.nuget.g.targets" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Echelon/obj/project.assets.json" afterPath="$PROJECT_DIR$/Echelon/obj/project.assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vokram.Core/Utils/Plugins.cs" afterPath="$PROJECT_DIR$/vokram.Core/Utils/Plugins.cs" />
+    </list>
+    <ignored path="$PROJECT_DIR$/packages/" />
+    <ignored path="$PROJECT_DIR$/vokram.Core/bin/" />
+    <ignored path="$PROJECT_DIR$/vokram.Core/obj/" />
+    <ignored path="$PROJECT_DIR$/vokram.Plugins/bin/" />
+    <ignored path="$PROJECT_DIR$/vokram.Plugins/obj/" />
+    <ignored path="$PROJECT_DIR$/vokram/bin/" />
+    <ignored path="$PROJECT_DIR$/vokram/obj/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
+    <option name="y" value="-1" />
+    <option name="width" value="1444" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vokram (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vokram (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Echelon" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vokram (5 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Echelon" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="References" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".NETCoreApp 1.1.0.0" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/vokram/vokram.csproj" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/vokram/bin/Debug/vokram.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vokram/bin/Debug" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebda04b2-b9fc-4028-9031-2272ddb20b29" name="Default" comment="" />
+      <created>1491616030880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491616030880</updated>
+      <workItem from="1491616036615" duration="389000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="389000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="-1" width="1444" height="877" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948717" sideWeight="0.2777778" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32948717" sideWeight="0.7222222" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28680557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.7986111" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///usr/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="4946" column="24" lean-forward="false" selection-start-line="4946" selection-start-column="24" selection-end-line="4946" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

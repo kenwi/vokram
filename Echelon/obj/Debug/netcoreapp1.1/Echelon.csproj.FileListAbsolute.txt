@@ -1,9 +1,18 @@
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.deps.json
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.json
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.dev.json
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.dll
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\bin\Debug\netcoreapp1.1\Echelon.pdb
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.csprojResolveAssemblyReference.cache
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.AssemblyInfo.cs
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.dll
-c:\users\wilken\documents\visual studio 2017\Projects\Echelon\Echelon\obj\Debug\netcoreapp1.1\Echelon.pdb
+/home/kenwi/Documents/vokram/Echelon/bin/Debug/netcoreapp1.1/Echelon.deps.json
+/home/kenwi/Documents/vokram/Echelon/bin/Debug/netcoreapp1.1/Echelon.runtimeconfig.json
+/home/kenwi/Documents/vokram/Echelon/bin/Debug/netcoreapp1.1/Echelon.runtimeconfig.dev.json
+/home/kenwi/Documents/vokram/Echelon/bin/Debug/netcoreapp1.1/Echelon.dll
+/home/kenwi/Documents/vokram/Echelon/bin/Debug/netcoreapp1.1/Echelon.pdb
+/home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.csprojResolveAssemblyReference.cache
+/home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.AssemblyInfo.cs
+/home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.dll
+/home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.pdb
+C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.deps.json
+C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.json
+C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.dev.json
+C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.dll
+C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.pdb
+C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.csprojResolveAssemblyReference.cache
+C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.AssemblyInfo.cs
+C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.dll
+C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.pdb
