@@ -27,6 +27,7 @@ namespace vokram.Core.Utils
             });
             return list;
             */
+            /*
             var list = new List<IIrcPlugin>();
             var assembly = Assembly.LoadFile(Path.Combine(Environment.CurrentDirectory, "vokram.Plugins.dll"));
             var types = assembly.GetTypes().Where(t =>t != null && t.Namespace!= null && 
@@ -37,7 +38,8 @@ namespace vokram.Core.Utils
                 if (assembly.CreateInstance(t.FullName) is IIrcPlugin plugin)
                     list.Add(plugin);
             });
-            return list;
+            return list;*/
+            return null;
         }
     }
 }
