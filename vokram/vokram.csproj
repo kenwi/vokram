@@ -58,12 +58,6 @@
     <Compile Include="VokramBot.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\vokram.Core\vokram.Core.csproj">
-      <Project>{B2116B2A-60DA-4671-A547-A97F92304223}</Project>
-      <Name>vokram.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

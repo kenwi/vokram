@@ -7,12 +7,3 @@
 /home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.AssemblyInfo.cs
 /home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.dll
 /home/kenwi/Documents/vokram/Echelon/obj/Debug/netcoreapp1.1/Echelon.pdb
-C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.deps.json
-C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.json
-C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.runtimeconfig.dev.json
-C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.dll
-C:\Users\wilken\Desktop\vokram\Echelon\bin\Debug\netcoreapp1.1\Echelon.pdb
-C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.csprojResolveAssemblyReference.cache
-C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.AssemblyInfo.cs
-C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.dll
-C:\Users\wilken\Desktop\vokram\Echelon\obj\Debug\netcoreapp1.1\Echelon.pdb
