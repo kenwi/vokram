@@ -52,7 +52,7 @@ namespace WebApplicationBasic
             }
 
             app.UseStaticFiles();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
