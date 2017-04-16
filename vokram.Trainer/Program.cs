@@ -19,7 +19,7 @@ namespace Vokram.Trainer
             try
             {
                 var config = new Config {
-                    TrainingFile = getArgumentValue(args, "--trainingfile") ?? "Logs/98294-efnet.port80.se/#nff.txt",
+                    TrainingFile = getArgumentValue(args, "--trainingfile") ?? "Logs/sample.txt",
                     BrainFile = getArgumentValue(args, "--brainfile") ?? "vokram.txt",
                     LogSections = int.Parse(getArgumentValue(args, "--logsections") ?? "1"),
                     NumReports = int.Parse(getArgumentValue(args, "--reports") ?? "100"),
