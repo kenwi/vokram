@@ -98,11 +98,11 @@ namespace Vokram.Plugins
         {
             return words.Reverse().Skip(1).Reverse().ToArray();
         }
-
+        /*
         private static IEnumerable<string> RemoveIrcEvents(IEnumerable<string> messages)
         {
             return messages.Where(message => message.Length > 10 && message.Contains("<"));
-        }
+        }*/
 
         private string GetBrainFile(IrcMessageEventArgs message)
         {
@@ -114,7 +114,7 @@ namespace Vokram.Plugins
             }
             return brainFile;
         }
-
+        /*
         private static string GetMessageText(string message)
         {
             return message.Split('>').Last().Trim();
@@ -123,13 +123,14 @@ namespace Vokram.Plugins
         private static string GetMessageTime(string message)
         {
             return message.Split(']').First().TrimStart('[');
-        }
+        }*/
 
         private IEnumerable<string> GetParameters(string text)
         {
             return text.Split(' ');
         }
 
+        /*
         public static MarkovChainString Train(Config parameters, Action<string> output)
         {
             output?.Invoke($"Initializing trainer '{parameters.TrainingFile}'");
@@ -154,15 +155,15 @@ namespace Vokram.Plugins
 
             var i = 0;
             var numReports = parameters.NumReports;
-            var messagesCount = messages.Count();
-            var step = messagesCount / numReports;
+            var messageCount = messages.Count();
+            var step = messageCount / numReports;
 
             output?.Invoke($"Processing messages");
             messages.ForEach(message =>
             {
                 if(i++ % step == 0)
                 {
-                    var percentage = (float)100/ messagesCount * i;
+                    var percentage = (float)100/ messageCount * i;
                     var percentageFormatted = percentage.ToString("0.");
                     var wordCountFormatted = markovChainTrainer.WordCount.ToString("N0");
                     var sentencesFormatted = markovChainTrainer.SentenceCount.ToString("N0");
@@ -171,8 +172,8 @@ namespace Vokram.Plugins
                     output?.Invoke($"Processed: {percentageFormatted} %, {wordCountFormatted} words, {sentencesFormatted} sentences, logtime {messageTimeFormatted}");
                 }
                 
-                message = GetMessageText(message);
-                markovChainTrainer.Train(message);
+                var messageText = GetMessageText(message);
+                markovChainTrainer.Train(messageText);
             });
 
             var uniqueWordsFormatted = markovChainString.Nodes.Count.ToString("N0");
@@ -180,7 +181,7 @@ namespace Vokram.Plugins
             output?.Invoke($"Unique words in brain: {uniqueWordsFormatted}");
 
             return markovChainString;
-        }
+        }*/
 
         public static MarkovChainString Load(Config parameters, Action<string> output)
         {
