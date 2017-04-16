@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrainPlugin
 {
     public class MarkovChainTrainer
     {
         public readonly MarkovChainString MarkovChain = new MarkovChainString();
+        public int SentenceCount { get; set; }
+        public int WordCount { get; set; }
 
         public MarkovChainTrainer(MarkovChainString markovChain)
         {
@@ -27,7 +29,10 @@ namespace vokram.Plugins.MarkovBrainPlugin
                     lastWord = word;
                 }
                 MarkovChain.Train(lastWord, null);
+                WordCount += words.Count();
             }
+            SentenceCount += sentences.Count();
+            ;
         }
 
         public static IEnumerable<string> CreateWords(string sentence)

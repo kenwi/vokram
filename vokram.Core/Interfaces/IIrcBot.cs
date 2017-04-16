@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using IrcDotNet;
-using vokram.Core.Client;
+using Vokram.Core.Client;
 
-namespace vokram.Core.Interfaces
+namespace Vokram.Core.Interfaces
 {
     public interface IIrcBot
     {

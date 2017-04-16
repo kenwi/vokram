@@ -1,8 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vokram.Core\Vokram.Core.csproj" />
+    <ProjectReference Include="..\Vokram.Plugins\Vokram.Plugins.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="IrcDotNet">

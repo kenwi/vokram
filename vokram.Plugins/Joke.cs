@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using HtmlAgilityPack;
 using IrcDotNet;
-using vokram.Core;
-using vokram.Core.Extensions;
+using Vokram.Core;
+using Vokram.Core.Extensions;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public class Joke : PluginBase
     {

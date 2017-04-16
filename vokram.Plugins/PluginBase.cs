@@ -1,6 +1,6 @@
-﻿using vokram.Core.Interfaces;
+﻿using Vokram.Core.Interfaces;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public abstract class PluginBase : IIrcPlugin
     {

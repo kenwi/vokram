@@ -1,4 +1,4 @@
-﻿namespace vokram.Core.Interfaces
+﻿namespace Vokram.Core.Interfaces
 {
     public interface IIrcPlugin
     {

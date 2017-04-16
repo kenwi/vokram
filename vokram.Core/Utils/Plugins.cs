@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using IrcDotNet.Collections;
-using vokram.Core.Interfaces;
+using Vokram.Core.Interfaces;
 
-namespace vokram.Core.Utils
+namespace Vokram.Core.Utils
 {
     public static class Plugins
     {
@@ -27,9 +27,8 @@ namespace vokram.Core.Utils
             });
             return list;
             */
-            /*
             var list = new List<IIrcPlugin>();
-            var assembly = Assembly.LoadFile(Path.Combine(Environment.CurrentDirectory, "vokram.Plugins.dll"));
+            var assembly = Assembly.LoadFile(Path.Combine(Environment.CurrentDirectory, "bin/debug/net461/vokram.Plugins.dll"));
             var types = assembly.GetTypes().Where(t =>t != null && t.Namespace!= null && 
                                                     t.Namespace.Equals("vokram.Plugins") && 
                                                     !t.IsAbstract);
@@ -38,8 +37,7 @@ namespace vokram.Core.Utils
                 if (assembly.CreateInstance(t.FullName) is IIrcPlugin plugin)
                     list.Add(plugin);
             });
-            return list;*/
-            return null;
+            return list;
         }
     }
 }

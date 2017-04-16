@@ -1,6 +1,6 @@
 ﻿using IrcDotNet;
 
-namespace vokram.Core.Extensions
+namespace Vokram.Core.Extensions
 {
     public static class Extensions
     {

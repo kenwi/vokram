@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 
-namespace vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrainPlugin
 {
     [DebuggerDisplay("Value: {this.value == null ? \"(null)\" : this.value.ToString()}, {this.links.Count} links")]
     [Serializable]

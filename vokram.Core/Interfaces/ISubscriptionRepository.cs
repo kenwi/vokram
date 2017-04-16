@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using IrcDotNet;
 
-namespace vokram.Core.Interfaces
+namespace Vokram.Core.Interfaces
 {
     public interface ISubscriptionRepository
     {

@@ -1,27 +1,42 @@
 ﻿using System;
 using System.Linq;
-using vokram.Plugins;
+using Vokram.Core.Utils;
+using Vokram.Plugins;
 
-namespace vokram.Trainer
+namespace Vokram.Trainer
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            var traininfFile = GetArgumentValue(args, "-t") ?? "training.txt";
-            var brainFile = GetArgumentValue(args, "-b") ?? "vokram.txt";
+            var consoleLog = new Action<string>
+                (logevent => Console.WriteLine($"[{DateTime.Now.ToLongTimeString()}] {logevent}"));
 
-            var brain = MarkovBrain.Train(traininfFile, brainFile, Console.WriteLine);
-            MarkovBrain.Save(brainFile, brain, Console.WriteLine);
-            MarkovBrain.Load(brainFile, Console.WriteLine);
+            var getArgumentValue = new Func<string[], string, string>
+                ((arguments, parameter) => arguments.SingleOrDefault(argument => argument.ToLower().Contains(parameter))?.Split('=').Last());
 
-            Console.WriteLine("Done.");
+            try
+            {
+                var config = new Config {
+                    TrainingFile = getArgumentValue(args, "--trainingfile") ?? "Logs/98294-efnet.port80.se/#nff.txt",
+                    BrainFile = getArgumentValue(args, "--brainfile") ?? "vokram-efnet-split.txt",
+                    LogSections = int.Parse(getArgumentValue(args, "--logsections") ?? "1"),
+                    NumReports = int.Parse(getArgumentValue(args, "--reports") ?? "10"),
+                    NumSamples = int.Parse(getArgumentValue(args, "--samples") ?? "10")
+                };
+
+                var brain = MarkovBrain.Train(config, consoleLog);
+                MarkovBrain.Save(config.BrainFile, brain, consoleLog);
+                MarkovBrain.Load(config, consoleLog);
+                consoleLog("Done");
+            }
+            catch (Exception ex)
+            {
+                consoleLog(ex.Message);
+                Console.Beep();
+            }
             Console.Beep();
-        }
-
-        private static string GetArgumentValue(string[] args, string parameter)
-        {
-            return args.SingleOrDefault(argument => argument.Contains(parameter))?.Split('=').Last();
+            ;
         }
     }
 }

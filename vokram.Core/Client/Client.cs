@@ -4,7 +4,7 @@ using System.Threading;
 using IrcDotNet;
 using IrcDotNet.Collections;
 
-namespace vokram.Core.Client
+namespace Vokram.Core.Client
 {
     public abstract class Client : IDisposable
     {

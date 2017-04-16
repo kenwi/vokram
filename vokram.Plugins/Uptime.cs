@@ -1,9 +1,9 @@
 ﻿using IrcDotNet;
 using System;
-using vokram.Core;
-using vokram.Core.Extensions;
+using Vokram.Core;
+using Vokram.Core.Extensions;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public class Uptime : PluginBase
     {

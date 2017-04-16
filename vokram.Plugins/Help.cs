@@ -1,7 +1,7 @@
 ﻿using IrcDotNet;
-using vokram.Core.Extensions;
+using Vokram.Core.Extensions;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public class Help : PluginBase
     {

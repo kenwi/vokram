@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrainPlugin
 {
     public class TalkBehaviour
     {

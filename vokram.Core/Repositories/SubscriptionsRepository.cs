@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 
 using IrcDotNet;
 using IrcDotNet.Collections;
-using vokram.Core.Interfaces;
+using Vokram.Core.Interfaces;
 
-namespace vokram.Core.Repositories
+namespace Vokram.Core.Repositories
 {
     public class SubscriptionsRepository : ISubscriptionRepository
     {

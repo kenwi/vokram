@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using IrcDotNet;
-using vokram.Core.Utils;
+using Vokram.Core.Utils;
 
-namespace vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrainPlugin
 {
     public class LoadBehaviour
     {

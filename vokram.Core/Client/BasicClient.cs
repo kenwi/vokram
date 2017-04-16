@@ -2,7 +2,7 @@
 using System.Linq;
 using IrcDotNet;
 
-namespace vokram.Core.Client
+namespace Vokram.Core.Client
 {
     public abstract class BasicClient : Client
     {

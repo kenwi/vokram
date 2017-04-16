@@ -2,25 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/vokram/v14
-/bin/Debug
-/obj/Debug
-/ClassDiagram1.cd
-/training.txt
-/packages/NUnit.3.6.1
-/Test/bin/Debug
-/Test/obj/Debug
-/vokram.Plugins/bin/Debug
-/vokram.Plugins/obj/Debug
-/vokram.Core/bin/Debug
-/vokram.Core/obj/Debug
-/vokram/bin/Debug
-/vokram/obj/Debug
-/Test/obj/Release
-/obj/Release
-/bin/Release
-/vokram.Trainer/bin/Debug
-/vokram.Trainer/obj/Debug
-/vokram.Plugins/vokram.Plugins.dll
-/.vs
-/.vs
+/vokram.Trainer/Logs/98294-efnet.port80.se

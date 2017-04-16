@@ -4,10 +4,13 @@ using System.Linq;
 using System.Net;
 using IrcDotNet;
 using IrcDotNet.Collections;
-using vokram.Core.Extensions;
-using vokram.Plugins.MarkovBrainPlugin;
+using Vokram.Core.Extensions;
+using Vokram.Plugins.MarkovBrainPlugin;
+using System.Collections;
+using System.Collections.Generic;
+using Vokram.Core.Utils;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public class MarkovBrain : PluginBase
     {
@@ -65,9 +68,9 @@ namespace vokram.Plugins
             SendMessage(channel, reply);
         }
 
-        private static void ReinitializeFromParameters(TalkBehaviour talker, ref string channel, ref string sentence, string[] parameters)
+        private static void ReinitializeFromParameters(TalkBehaviour talker, ref string channel, ref string sentence, IEnumerable<string> parameters)
         {
-            if (parameters.Length < 3 || parameters[1].ToLower() != "about")
+            if (parameters.Count() < 3 || parameters.Skip(1).ToString().ToLower() != "about")
                 return;
 
             var talkAboutWords = RemoveFirstKeywords(2, parameters);
@@ -80,9 +83,9 @@ namespace vokram.Plugins
             sentence = talker.GenerateRandomSentenceFrom(talkAboutWords);
         }
 
-        private static string[] RemoveFirstKeywords(int count, string[] parameters)
+        private static IEnumerable<string> RemoveFirstKeywords(int count, IEnumerable<string> parameters)
         {
-            return parameters.Skip(count).ToArray();
+            return parameters.Skip(count);
         }
 
         private void SendMessage(string channel, IrcMessageEventArgs reply)
@@ -91,9 +94,14 @@ namespace vokram.Plugins
                 Bot.SendTextToChannel(channel, reply.Text);
         }
 
-        private static string[] RemoveChannelName(string[] words)
+        private static string[] RemoveChannelName(IEnumerable<string> words)
         {
             return words.Reverse().Skip(1).Reverse().ToArray();
+        }
+
+        private static IEnumerable<string> RemoveIrcEvents(IEnumerable<string> messages)
+        {
+            return messages.Where(message => message.Length > 10 && message.Contains("<"));
         }
 
         private string GetBrainFile(IrcMessageEventArgs message)
@@ -107,64 +115,98 @@ namespace vokram.Plugins
             return brainFile;
         }
 
-        private string[] GetParameters(string text)
+        private static string GetMessageText(string message)
+        {
+            return message.Split('>').Last().Trim();
+        }
+
+        private static string GetMessageTime(string message)
+        {
+            return message.Split(']').First().TrimStart('[');
+        }
+
+        private IEnumerable<string> GetParameters(string text)
         {
             return text.Split(' ');
         }
 
-        public static MarkovChainString Train(string trainingFile, string brainFile, Action<string> outputAction)
+        public static MarkovChainString Train(Config parameters, Action<string> output)
         {
-            outputAction?.Invoke($"Started training from '{trainingFile}'.");
+            output?.Invoke($"Initializing trainer '{parameters.TrainingFile}'");
             var markovChainString = new MarkovChainString();
             var markovChainTrainer = new MarkovChainTrainer(markovChainString);
 
-            int i = 0;
-            var messages = File.ReadAllLines(trainingFile);
+            output?.Invoke($"Loading '{parameters.TrainingFile}'");
+            var lines = File.ReadAllLines(parameters.TrainingFile);
+            var numLinesFormatted = lines.Length.ToString("N0");
+            output?.Invoke($"Number of lines: {numLinesFormatted}");
+
+            output?.Invoke($"Removing IRC events from log");
+            var messages = RemoveIrcEvents(lines.Skip(1));
+
+            if(parameters.LogSections > 1)
+            {
+                output?.Invoke($"Splitting log into {parameters.LogSections} parts. Generating text from one part");
+                messages = messages.Take(messages.Count() / (int)parameters.LogSections);
+            }
+            var numMessagesFormatted = messages.Count().ToString("N0");
+            output?.Invoke($"Number of messages: {numMessagesFormatted}");
+
+            var i = 0;
+            var numReports = parameters.NumReports;
+            var messagesCount = messages.Count();
+            var step = messagesCount / numReports;
+
+            output?.Invoke($"Processing messages");
             messages.ForEach(message =>
             {
-                if (message.StartsWith("#"))
-                    return;
-
-                var datetime = message.Substring(0, 21);
-                if (i++ % 1000 == 0)
-                    outputAction?.Invoke(datetime);
-
-                message = message.Remove(0, 22);
-                if (message.StartsWith("<"))
+                if(i++ % step == 0)
                 {
-                    message = message.Split('>')[1];
-                    message = message.Remove(0, 1);
+                    var percentage = (float)100/ messagesCount * i;
+                    var percentageFormatted = percentage.ToString("0.");
+                    var wordCountFormatted = markovChainTrainer.WordCount.ToString("N0");
+                    var sentencesFormatted = markovChainTrainer.SentenceCount.ToString("N0");
+                    var messageTimeFormatted = GetMessageTime(message);
 
-                    markovChainTrainer.Train(message);
+                    output?.Invoke($"Processed: {percentageFormatted} %, {wordCountFormatted} words, {sentencesFormatted} sentences, logtime {messageTimeFormatted}");
                 }
+                
+                message = GetMessageText(message);
+                markovChainTrainer.Train(message);
             });
-            outputAction?.Invoke($"Finished training.");
+
+            var uniqueWordsFormatted = markovChainString.Nodes.Count.ToString("N0");
+            output?.Invoke($"Finished training");
+            output?.Invoke($"Unique words in brain: {uniqueWordsFormatted}");
+
             return markovChainString;
         }
 
-        public static MarkovChainString Load(string brainFile, Action<string> outputAction)
+        public static MarkovChainString Load(Config parameters, Action<string> output)
         {
-            outputAction?.Invoke($"Loading '{brainFile}'.");
+            output?.Invoke($"Loading '{parameters.BrainFile}'");
 
             var markovChainString = new MarkovChainString();
-            var loadBehaviour = new LoadBehaviour(markovChainString, brainFile);
+            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.BrainFile);
             var talkBehaviour = new TalkBehaviour(markovChainString);
 
-            outputAction?.Invoke($"Generating sample.");
+            output?.Invoke($"Generating samples");
             loadBehaviour.Process();
-
-            var sample = talkBehaviour.GenerateRandomSentence();
-            outputAction?.Invoke($"Sample: '{sample}'.");
+            Enumerable.Range(0, parameters.NumSamples).ForEach(i =>
+            {
+                var sample = talkBehaviour.GenerateRandomSentence();
+                output?.Invoke($"{i}: '{sample}'");
+            });
             return markovChainString;
         }
 
-        public static void Save(string brainFile, MarkovChainString markovChain, Action<string> outputAction)
+        public static void Save(string brainFile, MarkovChainString markovChain, Action<string> output)
         {
-            outputAction?.Invoke($"Saving '{brainFile}'.");
+            output?.Invoke($"Saving '{brainFile}'");
 
             var saveBehaviour = new SaveBehaviour(markovChain, brainFile);
             saveBehaviour.Process();
-            outputAction?.Invoke($"Saved to {brainFile}");
+            output?.Invoke($"Saved to '{brainFile}'");
         }
     }
 }

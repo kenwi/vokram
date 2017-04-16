@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using vokram.Core.Utils;
+using Vokram.Core.Utils;
 
-namespace vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrainPlugin
 {
     public class SaveBehaviour
     {

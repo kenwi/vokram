@@ -1,9 +1,9 @@
 ﻿using System;
 using IrcDotNet;
 using IrcDotNet.Collections;
-using vokram.Core.Extensions;
+using Vokram.Core.Extensions;
 
-namespace vokram.Plugins
+namespace Vokram.Plugins
 {
     public class Reload : PluginBase
     {

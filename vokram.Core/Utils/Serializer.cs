@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace vokram.Core.Utils
+namespace Vokram.Core.Utils
 {
     public static class Serializer
     {
