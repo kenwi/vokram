@@ -14,8 +14,8 @@ namespace Vokram.Plugins
 {
     public class MarkovBrain : PluginBase
     {
-        private readonly MarkovChainString _markovChainString = new MarkovChainString();
-        private readonly MarkovChainTrainer _markovChainTrainer;
+        private  MarkovChainString _markovChainString = new MarkovChainString();
+        private  MarkovChainTrainer _markovChainTrainer;
 
         public MarkovBrain()
         {
@@ -98,11 +98,6 @@ namespace Vokram.Plugins
         {
             return words.Reverse().Skip(1).Reverse().ToArray();
         }
-        /*
-        private static IEnumerable<string> RemoveIrcEvents(IEnumerable<string> messages)
-        {
-            return messages.Where(message => message.Length > 10 && message.Contains("<"));
-        }*/
 
         private string GetBrainFile(IrcMessageEventArgs message)
         {
@@ -114,74 +109,11 @@ namespace Vokram.Plugins
             }
             return brainFile;
         }
-        /*
-        private static string GetMessageText(string message)
-        {
-            return message.Split('>').Last().Trim();
-        }
-
-        private static string GetMessageTime(string message)
-        {
-            return message.Split(']').First().TrimStart('[');
-        }*/
 
         private IEnumerable<string> GetParameters(string text)
         {
             return text.Split(' ');
         }
-
-        /*
-        public static MarkovChainString Train(Config parameters, Action<string> output)
-        {
-            output?.Invoke($"Initializing trainer '{parameters.TrainingFile}'");
-            var markovChainString = new MarkovChainString();
-            var markovChainTrainer = new MarkovChainTrainer(markovChainString);
-
-            output?.Invoke($"Loading '{parameters.TrainingFile}'");
-            var lines = File.ReadAllLines(parameters.TrainingFile);
-            var numLinesFormatted = lines.Length.ToString("N0");
-            output?.Invoke($"Number of lines: {numLinesFormatted}");
-
-            output?.Invoke($"Removing IRC events from log");
-            var messages = RemoveIrcEvents(lines.Skip(1));
-
-            if(parameters.LogSections > 1)
-            {
-                output?.Invoke($"Splitting log into {parameters.LogSections} parts. Generating text from one part");
-                messages = messages.Take(messages.Count() / (int)parameters.LogSections);
-            }
-            var numMessagesFormatted = messages.Count().ToString("N0");
-            output?.Invoke($"Number of messages: {numMessagesFormatted}");
-
-            var i = 0;
-            var numReports = parameters.NumReports;
-            var messageCount = messages.Count();
-            var step = messageCount / numReports;
-
-            output?.Invoke($"Processing messages");
-            messages.ForEach(message =>
-            {
-                if(i++ % step == 0)
-                {
-                    var percentage = (float)100/ messageCount * i;
-                    var percentageFormatted = percentage.ToString("0.");
-                    var wordCountFormatted = markovChainTrainer.WordCount.ToString("N0");
-                    var sentencesFormatted = markovChainTrainer.SentenceCount.ToString("N0");
-                    var messageTimeFormatted = GetMessageTime(message);
-
-                    output?.Invoke($"Processed: {percentageFormatted} %, {wordCountFormatted} words, {sentencesFormatted} sentences, logtime {messageTimeFormatted}");
-                }
-                
-                var messageText = GetMessageText(message);
-                markovChainTrainer.Train(messageText);
-            });
-
-            var uniqueWordsFormatted = markovChainString.Nodes.Count.ToString("N0");
-            output?.Invoke($"Finished training");
-            output?.Invoke($"Unique words in brain: {uniqueWordsFormatted}");
-
-            return markovChainString;
-        }*/
 
         public static MarkovChainString Load(Config parameters, Action<string> output)
         {

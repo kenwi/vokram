@@ -53,28 +53,49 @@ namespace Vokram.Plugins.MarkovBrainPlugin
 
         public static MarkovChainString Train(Config parameters, Action<string> output)
         {
-            output?.Invoke($"Initializing trainer '{parameters.TrainingFile}'");
+            Func<int, string> formatInteger = (n) => n.ToString("N0");
+            Func<float, string> formatFloat = (n) => n.ToString("0.");
+            Func<string, string> getMessageText = (m) => m.Split('>').Last().Trim();
+            Func<string, string> getMessageNick = (m) => m.Split(' ').Skip(2).First();
+            Func<string, string> getMessageTime = (m) => m.Split(']').First().TrimStart('[');
+            Func<IEnumerable<string>, IEnumerable<string>> removeIrcEvents = (m) => m.Skip(1).Where(message => message.Length > 10 && message.Contains("<"));
+
+            output?.Invoke($"Initializing trainer '{parameters.Load}'");
             var markovChainString = new MarkovChainString();
             var markovChainTrainer = new MarkovChainTrainer(markovChainString);
 
-            output?.Invoke($"Loading '{parameters.TrainingFile}'");
-            var lines = File.ReadAllLines(parameters.TrainingFile);
-            var numLinesFormatted = lines.Length.ToString("N0");
+            output?.Invoke($"Loading '{parameters.Load}'");
+            var lines = File.ReadAllLines(parameters.Load);
+            var numLinesFormatted = formatInteger(lines.Length);
             output?.Invoke($"Number of lines: {numLinesFormatted}");
 
             output?.Invoke($"Removing IRC events from log");
-            var messages = RemoveIrcEvents(lines.Skip(1));
+            var messages = removeIrcEvents(lines);
 
-            if (parameters.LogSections > 1)
+            if (parameters.Sections > 1)
             {
-                output?.Invoke($"Splitting log into {parameters.LogSections} parts. Generating text from one part");
-                messages = messages.Take(messages.Count() / (int)parameters.LogSections);
+                output?.Invoke($"Splitting log into {parameters.Sections} parts. Generating text from one part");
+                messages = messages.Reverse().Take(messages.Count() / (int)parameters.Sections);
             }
-            var numMessagesFormatted = messages.Count().ToString("N0");
+            var numMessagesFormatted = formatInteger(messages.Count());
             output?.Invoke($"Number of messages: {numMessagesFormatted}");
 
+            if (parameters.Filter != "")
+            {
+                output?.Invoke($"Applying filter '{parameters.Filter}'");
+
+                messages = messages.Where(message => {
+                    var text = getMessageText(message);
+                    var nick = getMessageNick(message);
+                    return Regex.IsMatch(text, parameters.Filter, RegexOptions.IgnoreCase) || Regex.IsMatch(nick, parameters.Filter, RegexOptions.IgnoreCase);
+                });
+
+                numMessagesFormatted = formatInteger(messages.Count());
+                output?.Invoke($"Number of messages: {numMessagesFormatted}");
+            }
+
             var i = 0;
-            var numReports = parameters.NumReports;
+            var numReports = parameters.Reports;
             var messageCount = messages.Count();
             var step = messageCount / numReports;
 
@@ -84,38 +105,23 @@ namespace Vokram.Plugins.MarkovBrainPlugin
                 if (i++ % step == 0)
                 {
                     var percentage = (float)100 / messageCount * i;
-                    var percentageFormatted = percentage.ToString("0.");
-                    var wordCountFormatted = markovChainTrainer.WordCount.ToString("N0");
-                    var sentencesFormatted = markovChainTrainer.SentenceCount.ToString("N0");
-                    var messageTimeFormatted = GetMessageTime(message);
+                    var percentageFormatted = formatFloat(percentage);
+                    var wordCountFormatted = formatInteger(markovChainTrainer.WordCount);
+                    var sentencesFormatted = formatInteger(markovChainTrainer.SentenceCount);
+                    var messageTimeFormatted = getMessageTime(message);
 
                     output?.Invoke($"Processed: {percentageFormatted} %, {wordCountFormatted} words, {sentencesFormatted} sentences, logtime {messageTimeFormatted}");
                 }
 
-                var messageText = GetMessageText(message);
+                var messageText = getMessageText(message);
                 markovChainTrainer.Train(messageText);
             });
 
-            var uniqueWordsFormatted = markovChainString.Nodes.Count.ToString("N0");
+            var uniqueWordsFormatted = formatInteger(markovChainString.Nodes.Count);
             output?.Invoke($"Finished training");
             output?.Invoke($"Unique words in brain: {uniqueWordsFormatted}");
 
             return markovChainString;
-        }
-
-        private static IEnumerable<string> RemoveIrcEvents(IEnumerable<string> messages)
-        {
-            return messages.Where(message => message.Length > 10 && message.Contains("<"));
-        }
-
-        private static string GetMessageTime(string message)
-        {
-            return message.Split(']').First().TrimStart('[');
-        }
-
-        private static string GetMessageText(string message)
-        {
-            return message.Split('>').Last().Trim();
         }
     }
 }
