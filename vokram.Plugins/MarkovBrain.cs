@@ -185,15 +185,15 @@ namespace Vokram.Plugins
 
         public static MarkovChainString Load(Config parameters, Action<string> output)
         {
-            output?.Invoke($"Loading '{parameters.BrainFile}'");
+            output?.Invoke($"Loading '{parameters.Save}'");
 
             var markovChainString = new MarkovChainString();
-            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.BrainFile);
+            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.Save);
             var talkBehaviour = new TalkBehaviour(markovChainString);
 
             output?.Invoke($"Generating samples");
             loadBehaviour.Process();
-            Enumerable.Range(0, parameters.NumSamples).ForEach(i =>
+            Enumerable.Range(0, parameters.Samples).ForEach(i =>
             {
                 var sample = talkBehaviour.GenerateRandomSentence();
                 output?.Invoke($"{i}: '{sample}'");
@@ -201,13 +201,13 @@ namespace Vokram.Plugins
             return markovChainString;
         }
 
-        public static void Save(string brainFile, MarkovChainString markovChain, Action<string> output)
+        public static void Save(Config parameters, MarkovChainString markovChain, Action<string> output)
         {
-            output?.Invoke($"Saving '{brainFile}'");
+            output?.Invoke($"Saving '{parameters.Save}'");
 
-            var saveBehaviour = new SaveBehaviour(markovChain, brainFile);
+            var saveBehaviour = new SaveBehaviour(markovChain, parameters.Save);
             saveBehaviour.Process();
-            output?.Invoke($"Saved to '{brainFile}'");
+            output?.Invoke($"Saved to '{parameters.Save}'");
         }
     }
 }
