@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using Vokram.Core.Interfaces;
+using Vokram.Plugins;
 
 namespace Vokram
 {
@@ -6,7 +9,8 @@ namespace Vokram
     {
         public static void Main(string[] args)
         {
-            using (var vokram = new VokramBot("irc.freenode.net", "vokram"))
+            var plugins = new List<IIrcPlugin>() { new Joke(), new MarkovBrain() };
+            using (var vokram = new VokramBot("irc.freenode.net", "vokram2"))
             {
                 vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#hadamard");
                 vokram.Tick = (sender, dt) =>

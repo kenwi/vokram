@@ -8,6 +8,8 @@ using Vokram.Core.Interfaces;
 using Vokram.Core.Repositories;
 using Vokram.Core.Client;
 
+using Vokram.Plugins;
+
 namespace Vokram
 {
     public class VokramBot : BasicClient, IIrcBot
@@ -16,14 +18,12 @@ namespace Vokram
         public string Name { get; set; }
         public IList<IIrcPlugin> Plugins { get; set; }
 
-        public ISubscriptionRepository SubscriptionsRepository { get; }
-            = new SubscriptionsRepository();
-
-
-        public VokramBot(string host, string nick) : base(host)
+        public ISubscriptionRepository SubscriptionsRepository { get; } = new SubscriptionsRepository();
+        
+        public VokramBot(string host, string nick, IList<IIrcPlugin> plugins = null) : base(host)
         {
             RegistrationInfo = SetupIdentity(nick);
-            Plugins = SetupPlugins();
+            Plugins = plugins ?? SetupPlugins();
             Plugins.ForEach(plugin => plugin.Initialize(this));
             SetupEvents();
         }
@@ -41,7 +41,15 @@ namespace Vokram
 
         private static List<IIrcPlugin> SetupPlugins()
         {
-            return Core.Utils.Plugins.LoadAll();
+            return new List<IIrcPlugin>()
+            {
+                new MarkovBrain(),
+                new Joke(),
+                new Reload(),
+                new Join(),
+                new Leave()
+            };
+            //return Core.Utils.Plugins.LoadAll();
         }
 
         private void SetupEvents()
