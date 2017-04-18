@@ -9,8 +9,8 @@ namespace Vokram
     {
         public static void Main(string[] args)
         {
-            var plugins = new List<IIrcPlugin>() { new Joke(), new MarkovBrain() };
-            using (var vokram = new VokramBot("irc.freenode.net", "vokram2"))
+            var plugins = new List<IIrcPlugin>() { new Joke(), new MarkovBrain(), new Launch() };
+            using (var vokram = new VokramBot("irc.freenode.net", "vokram", plugins))
             {
                 vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#hadamard");
                 vokram.Tick = (sender, dt) =>
