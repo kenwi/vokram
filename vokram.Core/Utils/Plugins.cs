@@ -30,7 +30,7 @@ namespace Vokram.Core.Utils
             var list = new List<IIrcPlugin>();
             var assembly = Assembly.LoadFile(Path.Combine(Environment.CurrentDirectory, "bin/debug/net461/vokram.Plugins.dll"));
             var types = assembly.GetTypes().Where(t =>t != null && t.Namespace!= null && 
-                                                    t.Namespace.Equals("vokram.Plugins") && 
+                                                    t.Namespace.Equals("Vokram.Plugins") && 
                                                     !t.IsAbstract);
             types.ForEach(t =>
             {
