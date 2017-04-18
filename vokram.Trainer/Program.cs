@@ -19,17 +19,18 @@ namespace Vokram.Trainer
             try
             {
                 var config = new Config {
-                    TrainingFile = getArgumentValue(args, "--trainingfile") ?? "Logs/sample.txt",
-                    BrainFile = getArgumentValue(args, "--brainfile") ?? "vokram.txt",
-                    LogSections = int.Parse(getArgumentValue(args, "--logsections") ?? "1"),
-                    NumReports = int.Parse(getArgumentValue(args, "--reports") ?? "100"),
-                    NumSamples = int.Parse(getArgumentValue(args, "--samples") ?? "10")
+                    Load = getArgumentValue(args, "--load") ?? "Logs/130494-herbert.freenode.net-/#nff.txt",
+                    Save = getArgumentValue(args, "--save") ?? "vokram.txt",
+                    Filter = getArgumentValue(args, "--filter") ?? "",
+                    Sections = int.Parse(getArgumentValue(args, "--sections") ?? "1"),
+                    Reports = int.Parse(getArgumentValue(args, "--reports") ?? "50"),
+                    Samples = int.Parse(getArgumentValue(args, "--samples") ?? "25")
                 };
                 consoleLog(config.ToString());
 
                 //var brain = MarkovBrain.Train(config, consoleLog);
                 var brain = MarkovChainTrainer.Train(config, consoleLog);
-                MarkovBrain.Save(config.BrainFile, brain, consoleLog);
+                MarkovBrain.Save(config, brain, consoleLog);
                 MarkovBrain.Load(config, consoleLog);
                 consoleLog("Done");
             }
