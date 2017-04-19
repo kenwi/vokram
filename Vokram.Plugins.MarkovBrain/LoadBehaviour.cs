@@ -3,7 +3,7 @@ using System.IO;
 using IrcDotNet;
 using Vokram.Core.Utils;
 
-namespace Vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrain
 {
     public class LoadBehaviour
     {

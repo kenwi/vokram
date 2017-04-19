@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using Vokram.Core.Utils;
-using Vokram.Plugins;
-using Vokram.Plugins.MarkovBrainPlugin;
 
-namespace Vokram.Trainer
+namespace Vokram.Plugins.MarkovBrain.Trainer
 {
+    using Core.Utils;
+    using Plugins.MarkovBrain;
+        
     internal class Program
     {
         private static void Main(string[] args)
@@ -28,10 +28,9 @@ namespace Vokram.Trainer
                 };
                 consoleLog(config.ToString());
 
-                //var brain = MarkovBrain.Train(config, consoleLog);
-                var brain = MarkovChainTrainer.Train(config, consoleLog);
-                MarkovBrain.Save(config, brain, consoleLog);
-                MarkovBrain.Load(config, consoleLog);
+                var brain = Trainer.Train(config, consoleLog);
+                Trainer.Save(config, brain, consoleLog);
+                Trainer.Load(config, consoleLog);
                 consoleLog("Done");
             }
             catch (Exception ex)

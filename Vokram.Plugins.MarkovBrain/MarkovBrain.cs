@@ -2,24 +2,25 @@
 using System.IO;
 using System.Linq;
 using System.Net;
-using IrcDotNet;
-using IrcDotNet.Collections;
-using Vokram.Core.Extensions;
-using Vokram.Plugins.MarkovBrainPlugin;
 using System.Collections;
 using System.Collections.Generic;
-using Vokram.Core.Utils;
 
-namespace Vokram.Plugins
+using IrcDotNet;
+using IrcDotNet.Collections;
+
+namespace Vokram.Plugins.MarkovBrain
 {
+    using Core.Extensions;
+    using Core.Utils;
+
     public class MarkovBrain : PluginBase
     {
-        private  MarkovChainString _markovChainString = new MarkovChainString();
-        private  MarkovChainTrainer _markovChainTrainer;
+        private MarkovChainString _markovChainString = new MarkovChainString();
+        private Trainer _markovChainTrainer;
 
         public MarkovBrain()
         {
-            _markovChainTrainer = new MarkovChainTrainer(_markovChainString);
+            _markovChainTrainer = new Trainer(_markovChainString);
         }
 
         protected override void Initialize()
@@ -115,31 +116,6 @@ namespace Vokram.Plugins
             return text.Split(' ');
         }
 
-        public static MarkovChainString Load(Config parameters, Action<string> output)
-        {
-            output?.Invoke($"Loading '{parameters.Save}'");
-
-            var markovChainString = new MarkovChainString();
-            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.Save);
-            var talkBehaviour = new TalkBehaviour(markovChainString);
-
-            output?.Invoke($"Generating samples");
-            loadBehaviour.Process();
-            Enumerable.Range(0, parameters.Samples).ForEach(i =>
-            {
-                var sample = talkBehaviour.GenerateRandomSentence();
-                output?.Invoke($"{i}: '{sample}'");
-            });
-            return markovChainString;
-        }
-
-        public static void Save(Config parameters, MarkovChainString markovChain, Action<string> output)
-        {
-            output?.Invoke($"Saving '{parameters.Save}'");
-
-            var saveBehaviour = new SaveBehaviour(markovChain, parameters.Save);
-            saveBehaviour.Process();
-            output?.Invoke($"Saved to '{parameters.Save}'");
-        }
+ 
     }
 }

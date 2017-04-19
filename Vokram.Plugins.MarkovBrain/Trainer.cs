@@ -1,20 +1,23 @@
-﻿using IrcDotNet.Collections;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Vokram.Core.Utils;
 
-namespace Vokram.Plugins.MarkovBrainPlugin
+using IrcDotNet.Collections;
+
+namespace Vokram.Plugins.MarkovBrain
 {
-    public class MarkovChainTrainer
+    using Core.Utils;
+    using Plugins.MarkovBrain;
+
+    public class Trainer
     {
         public readonly MarkovChainString MarkovChain = new MarkovChainString();
         public int SentenceCount { get; set; }
         public int WordCount { get; set; }
 
-        public MarkovChainTrainer(MarkovChainString markovChain)
+        public Trainer(MarkovChainString markovChain)
         {
             MarkovChain = markovChain;
         }
@@ -62,7 +65,7 @@ namespace Vokram.Plugins.MarkovBrainPlugin
 
             output?.Invoke($"Initializing trainer '{parameters.Load}'");
             var markovChainString = new MarkovChainString();
-            var markovChainTrainer = new MarkovChainTrainer(markovChainString);
+            var markovChainTrainer = new Trainer(markovChainString);
 
             output?.Invoke($"Loading '{parameters.Load}'");
             var lines = File.ReadAllLines(parameters.Load);
@@ -122,6 +125,33 @@ namespace Vokram.Plugins.MarkovBrainPlugin
             output?.Invoke($"Unique words in brain: {uniqueWordsFormatted}");
 
             return markovChainString;
+        }
+
+        public static MarkovChainString Load(Config parameters, Action<string> output)
+        {
+            output?.Invoke($"Loading '{parameters.Save}'");
+
+            var markovChainString = new MarkovChainString();
+            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.Save);
+            var talkBehaviour = new TalkBehaviour(markovChainString);
+
+            output?.Invoke($"Generating samples");
+            loadBehaviour.Process();
+            Enumerable.Range(0, parameters.Samples).ForEach(i =>
+            {
+                var sample = talkBehaviour.GenerateRandomSentence();
+                output?.Invoke($"{i}: '{sample}'");
+            });
+            return markovChainString;
+        }
+
+        public static void Save(Config parameters, MarkovChainString markovChain, Action<string> output)
+        {
+            output?.Invoke($"Saving '{parameters.Save}'");
+
+            var saveBehaviour = new SaveBehaviour(markovChain, parameters.Save);
+            saveBehaviour.Process();
+            output?.Invoke($"Saved to '{parameters.Save}'");
         }
     }
 }

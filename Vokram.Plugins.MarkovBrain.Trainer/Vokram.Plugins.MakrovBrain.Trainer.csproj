@@ -6,15 +6,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vokram.Core\Vokram.Core.csproj" />
+    <Compile Remove="Logs\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+    <ItemGroup>
     <ProjectReference Include="..\Vokram.Plugins.MarkovBrain\Vokram.Plugins.MarkovBrain.csproj" />
     <ProjectReference Include="..\Vokram.Plugins\Vokram.Plugins.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="IrcDotNet">
-      <HintPath>..\Library\IrcDotNet.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+    <ItemGroup>
+      <Reference Include="IrcDotNet">
+        <HintPath>..\Library\IrcDotNet.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
 
 </Project>

@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using IrcDotNet;
-using IrcDotNet.Collections;
-
-using Vokram.Core.Interfaces;
-using Vokram.Core.Repositories;
-using Vokram.Core.Client;
-
-using Vokram.Plugins;
 
 namespace Vokram
 {
+    using Core.Interfaces;
+    using Core.Repositories;
+    using Core.Client;
+    using Plugins;
+    using IrcDotNet;
+    using IrcDotNet.Collections;
+
     public class VokramBot : BasicClient, IIrcBot
     {
         public IrcUser Owner { get; set; }
@@ -43,9 +42,6 @@ namespace Vokram
         {
             return new List<IIrcPlugin>()
             {
-                new MarkovBrain(),
-                new Joke(),
-                new Reload(),
                 new Join(),
                 new Leave()
             };

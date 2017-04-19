@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using IrcDotNet;
 
-namespace Vokram.Plugins.MarkovBrainPlugin
+namespace Vokram.Plugins.MarkovBrain
 {
     // Represents a Markov chain of arbitrary length.
     [DebuggerDisplay("{this.nodes.Count} nodes")]

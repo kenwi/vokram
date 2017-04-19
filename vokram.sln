@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vokram.Bot", "Vokram.Bot\Vokram.Bot.csproj", "{B638D3C7-CAE9-43BB-A7FB-7BCEE7FA4F0D}"
 EndProject
@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vokram.Core", "Vokram.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vokram.Plugins", "Vokram.Plugins\Vokram.Plugins.csproj", "{13B512E3-2BD8-4E16-A9EF-8B3D067E4907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vokram.Trainer", "Vokram.Trainer\Vokram.Trainer.csproj", "{F72B2011-5396-457A-B6E8-CF9A20FF1E3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vokram.Plugins.MakrovBrain.Trainer", "Vokram.Plugins.MarkovBrain.Trainer\Vokram.Plugins.MakrovBrain.Trainer.csproj", "{E2B08BB6-90F3-436D-9A60-ECCA0C3AB87B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vokram.Plugins.MarkovBrain", "Vokram.Plugins.MarkovBrain\Vokram.Plugins.MarkovBrain.csproj", "{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +31,14 @@ Global
 		{13B512E3-2BD8-4E16-A9EF-8B3D067E4907}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13B512E3-2BD8-4E16-A9EF-8B3D067E4907}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13B512E3-2BD8-4E16-A9EF-8B3D067E4907}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F72B2011-5396-457A-B6E8-CF9A20FF1E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F72B2011-5396-457A-B6E8-CF9A20FF1E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F72B2011-5396-457A-B6E8-CF9A20FF1E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F72B2011-5396-457A-B6E8-CF9A20FF1E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B08BB6-90F3-436D-9A60-ECCA0C3AB87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B08BB6-90F3-436D-9A60-ECCA0C3AB87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B08BB6-90F3-436D-9A60-ECCA0C3AB87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B08BB6-90F3-436D-9A60-ECCA0C3AB87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

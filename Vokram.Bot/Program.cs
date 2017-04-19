@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using Vokram.Core.Interfaces;
-using Vokram.Plugins;
-
 namespace Vokram
 {
+    using Core.Interfaces;
+    using Plugins;
+    using Plugins.MarkovBrain;
+    
     internal class Program
     {
         public static void Main(string[] args)
         {
-            var plugins = new List<IIrcPlugin>() { new Joke(), new MarkovBrain(), new Launch() };
+            var plugins = new List<IIrcPlugin>() { new Join(), new Leave(), new Joke(), new MarkovBrain(), new Launch() };
             using (var vokram = new VokramBot("irc.freenode.net", "vokram", plugins))
             {
                 vokram.ClientRegistered = (sender, eventArgs) => vokram.Join("#hadamard");
