@@ -2,7 +2,7 @@
 The functionality of the bot is extended by plugins.
 
 ## Vokram.Bot
-Plugins can be issued as a collection to the constructor of the bot. If no plugin argument is given, it will for now just load the Join and Leave plugins.
+Plugins can be issued as a collection to the constructor of the bot. If no plugin argument is given, it will for now just load the `Join` and `Leave` plugins.
 ```C#
 public static void Main(string[] args)
 {
