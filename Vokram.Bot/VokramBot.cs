@@ -67,14 +67,9 @@ namespace Vokram
             }
         }
 
-        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)
-            => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
-
-        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
-            => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
-
-        public void UnSubscribeAllMessages()
-            => SubscriptionsRepository.UnsubscribeAll();
+        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)    => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
+        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)                => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
+        public void UnSubscribeAllMessages()                                                    => SubscriptionsRepository.UnsubscribeAll();
 
         public void SubscribeToJoinEvents(string channel)
         {
