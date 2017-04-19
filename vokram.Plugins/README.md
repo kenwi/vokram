@@ -1,5 +1,5 @@
 # Vokram.Plugins
-The functionality of the bot is extended by plugins.
+The functionality of the bot is extended by plugins. Plugins will in the future be loaded dynamically as dll's at runtime, which will enable loading and reloading of hot updated plugins.
 
 ## Vokram.Bot
 Plugins can be issued as a collection to the constructor of the bot. If no plugin argument is given, it will for now just load the `Join` and `Leave` plugins.
