@@ -92,3 +92,10 @@ PS C:\Users\wilken\vokram\Vokram.trainer> dotnet run -- --reports=10 --sections=
 [00:30:01] 9: 'No eller sliter med dem.'
 [00:30:01] Done
 ```
+
+# Log format
+```
+#nff
+[2016-03-15 07:43:25] → user joined (123@com)
+[2016-03-15 07:43:50] <user> user text
+``` 
