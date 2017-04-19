@@ -3,6 +3,7 @@ using HtmlAgilityPack;
 using IrcDotNet;
 using Vokram.Core;
 using Vokram.Core.Extensions;
+using System;
 
 namespace Vokram.Plugins
 {
@@ -15,10 +16,11 @@ namespace Vokram.Plugins
 
         private void Callback(IrcMessageEventArgs message)
         {
+            Func<string, string> stripJunk = (text) => text.Replace("\n", "").Replace("\r", "").Trim(' ');
             var web = new HtmlWeb();
             var document = web.Load("http://schneierfacts.com");
             var node = document.DocumentNode.SelectSingleNode("//div[@class='fact']");
-            var joke = WebUtility.HtmlDecode(node.InnerText.Replace("\n", "").Replace("\r", "").Trim(' '));
+            var joke = WebUtility.HtmlDecode(stripJunk(node.InnerText));
 
             var reply = message.CreateReply(joke);
             Bot.SendMessage(reply);
