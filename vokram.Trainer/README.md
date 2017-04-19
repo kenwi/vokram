@@ -1,3 +1,5 @@
+
+
 # Vokram.Trainer
 This part of the application is responsible for reading IRC chatlogs, create and searialize a markov chain based "brain" that the bot can use to generate random sentences.
 
@@ -41,6 +43,16 @@ Build succeeded.
 
 # Training
 Run with `dotnet run`
+
+## Arguments
+To add arguments to the trainer, append  `--` to `dotnet run` and select argument
+* `--samples` Number of samples to be generated after the brain has been trained.
+* `--selctions` Split the messages into n parts and select the last one. Helps with processing time.
+* `--filter` Train only on the regex match (nick and text)
+* `--reports` Adjust how noisy the processing is. 100 will report ever delta percent.
+* `--load` Input file
+* `--save` Output file
+
 ```bash
 PS C:\Users\wilken\vokram\Vokram.trainer> dotnet run -- --reports=10 --sections=10 --samples=10
 [00:29:43] Load=Logs/130494-herbert.freenode.net-/#nff.txt, Save=vokram.txt, Sections=10, Reports=10, Samples=10, Filter=
