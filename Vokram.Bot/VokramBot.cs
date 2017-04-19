@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using IrcDotNet;
+using IrcDotNet.Collections;
 
 namespace Vokram
 {
@@ -8,17 +10,18 @@ namespace Vokram
     using Core.Repositories;
     using Core.Client;
     using Plugins;
-    using IrcDotNet;
-    using IrcDotNet.Collections;
 
     public class VokramBot : BasicClient, IIrcBot
     {
         public IrcUser Owner { get; set; }
         public string Name { get; set; }
         public IList<IIrcPlugin> Plugins { get; set; }
-
         public ISubscriptionRepository SubscriptionsRepository { get; } = new SubscriptionsRepository();
         
+        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback) => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
+        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)             => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
+        public void UnSubscribeAllMessages()                                                 => SubscriptionsRepository.UnsubscribeAll();
+
         public VokramBot(string host, string nick, IList<IIrcPlugin> plugins = null) : base(host)
         {
             RegistrationInfo = SetupIdentity(nick);
@@ -67,16 +70,7 @@ namespace Vokram
                 SendMessage(messageConsoleRedirect);
             }
         }
-
-        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)
-            => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
-
-        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)
-            => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
-
-        public void UnSubscribeAllMessages()
-            => SubscriptionsRepository.UnsubscribeAll();
-
+        
         public void SubscribeToJoinEvents(string channel)
         {
             var selectedChannel = this.DefaultClient.Channels.SingleOrDefault(c => c.Name.Equals(channel));
