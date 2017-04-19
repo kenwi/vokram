@@ -13,3 +13,29 @@ public static void Main(string[] args)
     }
 }
 ```
+
+## Joke.cs
+Plugins inherit from the `PluginBase` class and implements the `Initialize` method.
+```C#
+namespace Vokram.Plugins
+{
+    public class Joke : PluginBase
+    {
+        protected override void Initialize()
+        {
+            Bot.SubscribeToMessage("^!joke", Callback);
+        }
+
+        private void Callback(IrcMessageEventArgs message)
+        {
+            var web = new HtmlWeb();
+            var document = web.Load("http://schneierfacts.com");
+            var node = document.DocumentNode.SelectSingleNode("//div[@class='fact']");
+            var joke = WebUtility.HtmlDecode(node.InnerText.Replace("\n", "").Replace("\r", "").Trim(' '));
+
+            var reply = message.CreateReply(joke);
+            Bot.SendMessage(reply);
+        }
+    }
+}
+```
