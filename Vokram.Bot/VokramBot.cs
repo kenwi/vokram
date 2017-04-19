@@ -4,20 +4,18 @@ using System.Linq;
 using IrcDotNet;
 using IrcDotNet.Collections;
 
-using Vokram.Core.Interfaces;
-using Vokram.Core.Repositories;
-using Vokram.Core.Client;
-
-using Vokram.Plugins;
-
 namespace Vokram
 {
+    using Core.Interfaces;
+    using Core.Repositories;
+    using Core.Client;
+    using Plugins;
+
     public class VokramBot : BasicClient, IIrcBot
     {
         public IrcUser Owner { get; set; }
         public string Name { get; set; }
         public IList<IIrcPlugin> Plugins { get; set; }
-
         public ISubscriptionRepository SubscriptionsRepository { get; } = new SubscriptionsRepository();
         
         public VokramBot(string host, string nick, IList<IIrcPlugin> plugins = null) : base(host)
