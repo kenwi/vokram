@@ -18,6 +18,10 @@ namespace Vokram
         public IList<IIrcPlugin> Plugins { get; set; }
         public ISubscriptionRepository SubscriptionsRepository { get; } = new SubscriptionsRepository();
         
+        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback) => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
+        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)             => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
+        public void UnSubscribeAllMessages()                                                 => SubscriptionsRepository.UnsubscribeAll();
+
         public VokramBot(string host, string nick, IList<IIrcPlugin> plugins = null) : base(host)
         {
             RegistrationInfo = SetupIdentity(nick);
@@ -66,11 +70,7 @@ namespace Vokram
                 SendMessage(messageConsoleRedirect);
             }
         }
-
-        public void SubscribeToMessage(string trigger, Action<IrcMessageEventArgs> callback)    => SubscriptionsRepository.SubscribeToMessage(trigger, callback);
-        public void SubscribeToAllMessages(Action<IrcMessageEventArgs> callback)                => SubscriptionsRepository.SubscribeToMessage("^(.?$|[^!].*)", callback);
-        public void UnSubscribeAllMessages()                                                    => SubscriptionsRepository.UnsubscribeAll();
-
+        
         public void SubscribeToJoinEvents(string channel)
         {
             var selectedChannel = this.DefaultClient.Channels.SingleOrDefault(c => c.Name.Equals(channel));
