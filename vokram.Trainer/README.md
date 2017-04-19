@@ -1,7 +1,7 @@
 
 
 # Vokram.Trainer
-This part of the application is responsible for reading IRC chatlogs, create and searialize a markov chain based "brain" that the bot can use to generate random sentences.
+This part of the application is responsible for reading IRC chatlogs, create and serialize a markov chain based "brain" that the bot can use to generate random sentences.
 
 # Installation
 Clone the repository. Run `dotnet restore` and build with `dotnet build`.
