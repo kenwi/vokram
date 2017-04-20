@@ -22,7 +22,7 @@ namespace Vokram.Plugins.MarkovBrain.Trainer
                     Load = getArgumentValue(args, "--load") ?? "Logs/130494-herbert.freenode.net-/#nff.txt",
                     Save = getArgumentValue(args, "--save") ?? "vokram.txt",
                     Filter = getArgumentValue(args, "--filter") ?? "",
-                    Sections = int.Parse(getArgumentValue(args, "--sections") ?? "1"),
+                    Sections = int.Parse(getArgumentValue(args, "--sections") ?? "100"),
                     Reports = int.Parse(getArgumentValue(args, "--reports") ?? "50"),
                     Samples = int.Parse(getArgumentValue(args, "--samples") ?? "25")
                 };
@@ -30,6 +30,7 @@ namespace Vokram.Plugins.MarkovBrain.Trainer
 
                 var brain = Trainer.Train(config, consoleLog);
                 Trainer.Save(config, brain, consoleLog);
+                config.Load = config.Save;
                 Trainer.Load(config, consoleLog);
                 consoleLog("Done");
             }
