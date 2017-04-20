@@ -21,8 +21,8 @@ namespace Vokram.Plugins.MarkovBrain
             {
                 words = _markovChainString.GenerateSequence().ToArray();
             } while (words.Length < 3 && trials++ < 50);
-            
-            return WordsToSentence(words);
+
+            return WordsToSentence(words).TrimEnd('-', ' ');
         }
 
         public string GenerateRandomSentenceFrom(string text)
