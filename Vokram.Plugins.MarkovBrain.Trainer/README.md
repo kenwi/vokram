@@ -1,5 +1,5 @@
 
-# Vokram.Trainer
+# Vokram.Plugins.MarkovBrain.Trainer
 This part of the application is responsible for reading IRC chatlogs, create and searialize a markov chain based "brain" that the bot can use to generate random sentences.
 
 # Installation
