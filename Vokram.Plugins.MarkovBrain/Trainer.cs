@@ -129,10 +129,10 @@ namespace Vokram.Plugins.MarkovBrain
 
         public static MarkovChainString Load(Config parameters, Action<string> output)
         {
-            output?.Invoke($"Loading '{parameters.Save}'");
+            output?.Invoke($"Loading '{parameters.Load}'");
 
             var markovChainString = new MarkovChainString();
-            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.Save);
+            var loadBehaviour = new LoadBehaviour(markovChainString, parameters.Load);
             var talkBehaviour = new TalkBehaviour(markovChainString);
 
             output?.Invoke($"Generating samples");
