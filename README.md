@@ -30,7 +30,7 @@ $ sudo apt-get update
 
 Then install the tools
 ```bash
-$ sudo apt-get install dotnet-dev-1.0.1 git
+$ sudo apt-get install dotnet-dev-1.0.1 git msbuild
 ```
 
 To do a linux build we at the moment also need to set the value of the FrameworkPathOverride environment variable.
@@ -42,6 +42,17 @@ Clone the repository
 ```bash
 $ git clone http://github.com/kenwi/vokram
 ```
+I'm using msbuild version 15.1.0.0 and dotnet version 1.0.1
+```bash
+$ msbuild /version
+Microsoft (R) Build Engine version 15.1.0.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+15.1.0.0
+$ dotnet --version
+1.0.1
+```
+
 
 Restore packages
 ```bash
