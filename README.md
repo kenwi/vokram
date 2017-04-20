@@ -36,18 +36,18 @@ $ sudo apt-get install dotnet-dev-1.0.1 git
 To do a linux build we at the moment also need to set the value of the FrameworkPathOverride environment variable.
 ```bash
 $ export FrameworkPathOverride=/usr/lib/mono/4.5/
-`` `
+```
 
 Clone the repository
 ```bash
 $ git clone http://github.com/kenwi/vokram
-`` `
+```
 
 Restore packages
 ```bash
 $ cd vokram
 $ dotnet restore
-`` `
+```
 
 Build
 ```bash
@@ -66,6 +66,8 @@ Build succeeded.
     0 Error(s)
 
 Time Elapsed 00:00:03.84
+```
+
 `` `
 
 
