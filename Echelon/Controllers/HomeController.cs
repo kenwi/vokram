@@ -4,14 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-using vokram.Core;
-using vokram;
+using Vokram.Bot;
+using Vokram.Core;
+
 
 namespace WebApplicationBasic.Controllers
 {
     public class HomeController : Controller
     {
-        VokramBot bot;
+        readonly VokramBot bot;
 
         public HomeController()
         {
@@ -23,9 +24,7 @@ namespace WebApplicationBasic.Controllers
 
         public IActionResult Index()
         {
-
             bot.Connect("chat.freenode.net");
-
             return View();
         }
 

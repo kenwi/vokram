@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vokram.Plugins.MakrovBrain.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vokram.Plugins.MarkovBrain", "Vokram.Plugins.MarkovBrain\Vokram.Plugins.MarkovBrain.csproj", "{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Echelon", "Echelon\Echelon.csproj", "{D52C58F1-9D4F-4C5E-B725-9B6EEAFEA8DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D69B17EA-46AE-4915-B2FC-7BB2C6BCCB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52C58F1-9D4F-4C5E-B725-9B6EEAFEA8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52C58F1-9D4F-4C5E-B725-9B6EEAFEA8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52C58F1-9D4F-4C5E-B725-9B6EEAFEA8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52C58F1-9D4F-4C5E-B725-9B6EEAFEA8DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

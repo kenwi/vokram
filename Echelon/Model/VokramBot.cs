@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using IrcDotNet;
 using IrcDotNet.Collections;
-using vokram.Core.Interfaces;
-using vokram.Core.Repositories;
-using vokram.Core.Client;
 
-namespace vokram
+namespace Vokram
 {
+    using Core.Interfaces;
+    using Core.Repositories;
+    using Core.Client;
+    using Bot.Model;
+
     public class VokramBot : BasicClient, IIrcBot
     {
         public IrcUser Owner { get; set; }
