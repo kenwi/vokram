@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Vokram
+
+namespace Vokram.Bot
 {
     using Core.Interfaces;
     using Plugins;
     using Plugins.MarkovBrain;
-    
+    using Bot.Model;
+
     internal class Program
     {
+        
         public static void Main(string[] args)
         {
             var plugins = new List<IIrcPlugin>() { new Join(), new Leave(), new Joke(), new MarkovBrain(), new Launch() };

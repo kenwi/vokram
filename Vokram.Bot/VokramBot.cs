@@ -4,12 +4,13 @@ using System.Linq;
 using IrcDotNet;
 using IrcDotNet.Collections;
 
-namespace Vokram
+namespace Vokram.Bot
 {
     using Core.Interfaces;
     using Core.Repositories;
     using Core.Client;
     using Plugins;
+    using Model;
 
     public class VokramBot : BasicClient, IIrcBot
     {
